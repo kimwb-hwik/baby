@@ -2,10 +2,11 @@ $(function(){
 	//NoticeBox();
 	//SettingBox();
 	
-	if($('.side-popup').size() != 0){
+	if($('.side-menu').size() != 0){
 		Sidepopup(); //메뉴
 	}
 	Headerfixed();
+	qnalist();
 		
 
 
@@ -21,6 +22,23 @@ function Headerfixed(){
 	});
 }
 
+
+//detail qnalist
+function qnalist(){
+	// 상품상세 qna-list
+	$(document).on("click",".qna-list .drop" , function(e) {
+		e.preventDefault();
+		$('.qnalist .drop').removeClass('on');
+		$('.qnalist > ul > li > a').removeClass('on');
+		$('.qnalist .dropbox ul li a').removeClass('on');
+				
+		$('.qnalist .dropbox').slideUp('fast');
+		if (!$(this).next('.dropbox').is(':visible')) {//.next 같은위치
+			$(this).addClass('on');
+			$(this).next('.dropbox').slideDown();
+		}
+	});
+}
 
 
 
@@ -55,21 +73,21 @@ function  SettingBox(){
 
 //사이드 팝업
 function Sidepopup(){
-	$('.side-popup-btn').on('click',function(e){
+	$('.side-menu-btn').on('click',function(e){
 		e.preventDefault();
 		
-		$('.side-popup').animate({left: '0%'});
-		$('.side-popup-close').fadeIn();
+		$('.side-menu').animate({left: '0%'});
+		$('.side-menu-close').fadeIn();
 		$('#wrap').css({'position':'fixed'});
 		/*[2017-06-01 최정아] 스크롤 발생하지 않는 페이지에서 페이지 하단에 가로로 하얀 배경이 생겨 'position':'fixed'만 사용 
 		 * $('#wrap').css({'overflow':'hidden' , 'position':'fixed'});*/
 		$('.bgDim').height($(document).height()).toggle();
 		return false;
 	});
-	$('.side-popup-close, .bgDim,.side-popup .btn-list .cancel').on('click',function(e){
+	$('.side-menu-close, .bgDim').on('click',function(e){
 		e.preventDefault();
-		$('.side-popup').animate({left: '-100%'});
-		$('.side-popup-close').hide();
+		$('.side-menu').animate({left: '-100%'});
+		$('.side-menu-close').hide();
 		$('#wrap').css({'overflow':'' , 'position':''});
 		$('.bgDim').height($(document).height()).toggle();
 		
@@ -84,48 +102,5 @@ function Sidepopup(){
 
 
 
-$(document).ready(function() {
-	var selectTarget = $('.selectbox select');
-	selectTarget.change(function(){
-		var select_name = $(this).children('option:selected').text();
-		$(this).siblings('label').text(select_name);
-	});
-
-	 // focus 가 되었을 때와 focus 를 잃었을 때
-  selectTarget.on({
-    'focus': function() {
-      $(this).parent().addClass('focus');
-    },
-    'blur': function() {
-      $(this).parent().removeClass('focus');
-    }
-  });
-
-  selectTarget.change(function() {
-    var select_name = $(this).children('option:selected').text();
-    $(this).siblings('label').text(select_name);
-    $(this).parent().removeClass('focus');
-  });
-
-});
 
 
-//search 삭제 버튼
-
- $(function() {
-	$('input[type="search"]').iwtInputClearButtonController({top:3, right:3});
-	//$('input[type="search"]').iwtInputClearButtonController({position:'absolute', appendTarget:$('body'), top:10, left:50});
-});
-
-
-//달력
-$(function(){
-		
-	$("#date3").datepicker({
-		onselect:function(dateText, inst) {
-			console.log(dateText);
-			console.log(inst);
-		}
-	});
-
-});

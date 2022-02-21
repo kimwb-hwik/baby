@@ -84,22 +84,17 @@ a:active{color:#000;text-decoration:none;}
 .font13{ font-size:13px;}
 .font12{ font-size:12px;}
 .font10{ font-size:10px;}
-.bb{font-weight:600 !important;}
-.bn{font-weight:500;}
-.r{ color:#e62d53;}
-.b{color:#3647ff;}
-.g{color:#00592d;}
-
-.t-ygreen{color:#70b340;}
-.t-green{color:#00592d;}
-.t-black{color:#000;}
-.t-red{color:#e62d53;}
-.t-blue{color:#202bf3 !important;}
-.t-gray{color:#7a7a7a;}
-.t-white{color:#fff !important;}
 
 
-.bg-gray{background:#f9f9f9;}
+.text-blue{color:#54c3f1;}
+.text-red{color:#d40000;}
+.text-ygreen{color:#70b340;}
+.text-green{color:#00592d;}
+.text-black{color:#000;}
+.text-gray{color:#666;}
+.text-darkgray{color:#333;}
+.text-white{color:#fff !important;}
+
 
 .fw100{ font-weight:100;}
 .fw200{ font-weight:200;}
