@@ -1,0 +1,306 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 17px;
+    line-height: 160%;
+    color: #333;
+    font-family: 'NotoKr', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+	word-spacing:-1px;
+	
+}
+
+.cont-wrap{
+	width: 1400px;
+	margin: 0 auto;
+}
+
+/*layout*/
+
+#wrap{
+	
+}
+
+#header{
+	
+	position: relative;
+	border-bottom: 1px solid #dddddd;
+	
+}
+
+header{
+	
+	text-align: center;
+	padding-top: 40px;
+}
+header h1{
+	margin-bottom: 40px;
+}
+
+header .lnb{
+	position: absolute;
+	right:40px;
+	top: 35px;
+}
+
+
+header .lnb a{
+	color:#666;
+	padding: 0 10px;
+	text-align: center;
+	font-size: 15px;
+}
+header .lnb a.store{
+	margin-right: 30px;
+	text-align: left;
+	position: relative;
+	
+}
+header .lnb a.store::before{
+	background:url(../images/icon-naver-store.png) left top no-repeat;
+	content: "";
+	width: 25px;
+	height: 25px;
+	background-size: 25px;
+}
+header .lnb a.store span{
+	background:url(../images/bg-store-gray.png) left top no-repeat;
+	width: 134px;
+	height: 33px;
+	background-size: 134px 33px;
+	font-size: 12px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	padding-top: 8px;
+	position: absolute;
+	right:-10px;
+	top: 30px;
+	
+}
+header .lnb a.login{
+	font-weight: 500;
+}
+header .lnb a.join{
+	content: "";
+	background: url(../images/bl-line-on.png) left center no-repeat;
+	font-weight: 500;
+}
+
+header .lnb a.menu{
+	text-align: right;
+	padding-right: 0;
+	padding-top: 5px;
+	margin-left: 30px;
+	background: url(../images/icon-menu-off.png) left top no-repeat;
+	font-size: 0;
+	width: 27px;
+	text-indent: -9999999px;
+}
+header #gnb{
+	margin-bottom: 34px;
+}
+header #gnb a{
+	color:#333;
+	font-weight: 500;
+	padding: 0 35px;
+	font-size: 17px;
+}
+
+/*fixed*/
+header.fixed{
+	
+	background-color: #fff;
+	padding: 30px 40px 60px 40px;
+    height: 100px;
+    box-sizing: border-box;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	transition-delay: 0s;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px #e3e3e3;
+
+	
+}
+header.fixed h1{
+	
+	float: left;
+	margin-right: 223px;
+	margin-bottom: 0;
+}
+
+header.fixed h1 img{
+	display: none;
+}
+header.fixed h1 a::before{
+	width: 180px;
+	height: 34px;
+	content: "";
+	background: url(../images/h1-logo-on.png) left top;
+}
+
+header.fixed #gnb{
+	
+	float: left;
+}
+
+header.fixed #gnb a{
+	color: #222;
+}
+
+header.fixed .lnb{
+	position: absolute;
+	right:40px;
+	top: 25px;
+	
+}
+header.fixed .lnb a{
+	color: #222;
+}
+
+header.fixed .lnb a.join{
+	content: "";
+	background: url(../images/bl-line-on.png) left center no-repeat;
+	font-weight: 500;
+}
+
+header.fixed .lnb a.menu{
+	background: url(../images/icon-menu-on.png) left top no-repeat;
+	
+}
+
+/*quick-menu*/
+.quick-menu{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 258px;
+	text-align: right;
+}
+.quick-menu a{
+	display:inline-block;
+	width: 78px;
+	height: 78px;
+	
+}
+
+.quick-menu a.counsel{
+	background: #54c3f1 url(../images/icon-advice.png) 15px center no-repeat;
+	display: block;
+	text-align: left;
+	width: 258px;
+	height: 71px;
+	border-radius: 35px;
+	color: #fff;
+	font-size: 16px;
+	padding: 20px 0 0 70px;
+	
+
+}
+
+.quick-menu a.quick01{
+	background:url(../images/icon-quick-01.png) -14px -14px no-repeat;
+	font-size: 0;
+	text-indent: -999999px;
+	
+	
+}
+.quick-menu a.quick02{
+	background:url(../images/icon-quick-02.png) -14px -14px no-repeat;
+	font-size: 0;
+	text-indent: -999999px;
+	
+	
+}
+.quick-menu a.close{
+	background:url(../images/icon-quick-close.png) -14px -14px no-repeat;
+	font-size: 0;
+	text-indent: -999999px;
+	
+	
+}
+
+
+
+
+/*footer*/
+footer{
+	background-color: #222;
+	padding: 50px 0;
+	position: relative;
+}
+footer .cont-wrap{
+	
+	overflow: hidden;
+}
+
+footer h6{
+	float: left;
+	margin-right: 100px;
+}
+.foot-txt{
+	float: left;
+	color: #919191;
+
+	font-size: 14px;
+}
+.foot-txt address{
+	display: inline-block;
+}
+.foot-txt em{
+	font-size: 11px;
+}
+.foot-txt span{
+	display: block;
+}
+footer .fnb{
+	float: right;
+}
+footer .fnb a{
+	margin-left: 20px;
+}
+
+footer a.top{
+	width: 71px;
+	height: 71px;
+	font-size: 0;
+	text-indent: -9999px;
+	position: absolute;
+	right: 0;
+	top: -100px;
+	background: url(../images/btn-top.png) left top no-repeat;
+}
+
+
+/*title*/
+h2.title{
+	font-size: 40px;
+	font-weight: 700;
+	font-family: 'Roboto';
+	
+}
+
+/*style*/
+
+#container{
+	min-height: 900px;
+}
+
+/*login-bob*/
+.login-box{
+	width:550px ;
+	margin:100px auto;
+	text-align: center;
+
+}
