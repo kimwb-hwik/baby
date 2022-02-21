@@ -30,6 +30,7 @@ body {
 	
 	position: relative;
 	border-bottom: 1px solid #dddddd;
+	z-index: 999;
 	
 }
 

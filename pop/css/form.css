@@ -198,11 +198,12 @@ input.none{ border:none; width:160px; height:50px; font-size:24px; color:#000;fo
 }
 
 
-.btn.gray{background:#666666;}
-.btn.green{background:#002f10;}
-.btn.ygreen{background:#81c253;}
-.btn.blue{background:#00b4ff;}
+.btn.bg-gray{background:#666666;}
+.btn.bg-green{background:#002f10;}
+.btn.bg-ygreen{background:#81c253;}
+.btn.bg-blue{background:#00b4ff;}
 .btn.line-dark{background:#fff; border:1px solid #333}
+.btn.bg-white{background:#fff;}
 
 
 .btn.add{width:131px; height:48px !important; padding:11px 0 14px 0; font-size:20px; box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.5);
