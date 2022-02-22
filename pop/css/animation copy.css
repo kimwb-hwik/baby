@@ -1,6 +1,10 @@
 /*.slide-right*/
 
 .slide-right,
+.section-02::before,
+.section-02 h2.title,
+.section-03::before,
+.section-03 h2.title,
 .section-05 ul li:nth-child(even) h3.title span.slide-txt,
 .section-05 ul li:nth-child(even) h3.title div.bn{
 	-webkit-animation: slide-right 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
@@ -25,6 +29,8 @@
 }
 
 /*delay*/
+.section-02 h2.title,
+.section-03 h2.title,
 .section-05 ul li:nth-child(odd) h3.title div.bn,
 .section-05 ul li:nth-child(even) h3.title div.bn{
 			animation-iteration-count: infinite; 

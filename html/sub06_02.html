@@ -20,25 +20,8 @@
 <body>
 
 <div id="wrap">
-    <div id="header">
-        <header>
-            <h1><a href="#none"><img src="../pop/images/h1-logo-on.png" alt="babybrezza 로고" /></a></h1>
-            <nav id="gnb">
-                <a href="#none">자동 분유제조기</a>
-                <a href="#none">이유식 마스터기</a>
-                <a href="#none">젖병 살균 건조기</a>
-                <a href="#none">for 브레짜패밀리</a>
-            </nav>
-            <div class="lnb">
-                <a href="#none" class="store"><span>스마트스토어 바로가기</span></a>
-                <a href="#none" class="login">Log in</a>
-                <a href="#none" class="join">Join</a>
-                <a href="#none" class="menu">빠른메뉴</a>
-            </div>
-
-        </header>
-
-    </div><!--//header-->
+    <div w3-include-html="../inc/_header.html"></div>
+    <div w3-include-html="../inc/_sidepanel.html"></div>
 
     <div class="quick-menu">
         <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
@@ -92,28 +75,11 @@
 
    
 
-    <footer id="footer">
-        <div class="cont-wrap">
-            <h6><img src="../pop/images/logo-foot.png" alt="babybrezza" /></h6>
-            <div class="foot-txt">
-                대표 : 박강민 <em>｜</em> 개인정보관리책임 : info@babybrezza.kr<em>｜</em>
-                <address>경기도 고양시 일산동구 일산로 138, 일산테크노타운 715</address>
-                <span class="copy">COPYRIGHT © BABYBREZZA ALL RIGHTS RESERVED.</span>
-            </div>
-            <div class="fnb">
-                <a href="#none"><img src="../pop/images/icon-foot-01.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-02.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-03.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-04.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-05.png" alt="" /></a>
-                
-            </div>
-            <a href="#header" class="top">위로가기</a>
-        </div>
-    </footer>
-
+    <div w3-include-html="../inc/_footer.html"></div>
 
     
 </div>  
-
+<script>
+    includeHTML();
+    </script>
 </body>

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>bbzzpub</title>
 	
+	<!-- <script type="text/javascript" src="../pop/js/jquery-1.12.4.min.js"></script> -->
 	<script type="text/javascript" src="../pop/js/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="../pop/js/front.js"></script>
+	 <script type="text/javascript" src="../pop/js/front.js"></script>
 
 	
     <link rel="stylesheet" href="../pop/css/font.css">
@@ -26,32 +27,14 @@
 <body>
 
 <div id="wrap">
-    <div id="header">
-        <header>
-            <h1><a href="#none"><img src="../pop/images/h1-logo.png" alt="babybrezza 로고" /></a></h1>
-            <nav id="gnb">
-                <a href="#none">자동 분유제조기</a>
-                <a href="#none">이유식 마스터기</a>
-                <a href="#none">젖병 살균 건조기</a>
-                <a href="#none">for 브레짜패밀리</a>
-            </nav>
-            <div class="lnb">
-                <a href="#none" class="store"><span>스마트스토어 바로가기</span></a>
-                <a href="#none" class="login">Log in</a>
-                <a href="#none" class="join">Join</a>
-                <a href="#none" class="menu">빠른메뉴</a>
-            </div>
+    
+    <div w3-include-html="../inc/_mainheader.html"></div>
+    <div w3-include-html="../inc/_sidepanel.html"></div>
+    
 
-        </header>
+    
 
-        <div class="main-visual">
-            <a href="#none">
-                <span class="kenburns-left">baby brezza 텍스트 영역</span>
-            </a>
-        </div><!--//main-visual-->
-
-    </div><!--//header-->
-
+    
     <div class="quick-menu">
         <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
         <a href="#none" class="quick01">빠른메뉴1</a><br>
@@ -117,11 +100,11 @@
 
         </section>
         <section class="section-02">
-            <h2 class="title t-white" data-aos="fade-right">
+            <h2 class="title text-white" data-aos="fade-right">
                 
                 버튼하나로 <br>
                 <b>쉽고, 빠르고,정확하게</b>
-                <p class="font20 t-white">
+                <p class="font20 text-white">
                     베이비 브레짜는 부모와 아이가<br>
                     서로의 시간에 더 집중할 수 있기를 바랍니다.
                 </p>
@@ -129,10 +112,10 @@
             
         </section>
         <section class="section-03">
-            <h2 class="title  t-white " data-aos="fade-right">
+            <h2 class="title  text-white " data-aos="fade-right">
                 타협없는<br>
                 <b>퀄리티  </b>
-                <p class="font20 t-white">
+                <p class="font20 text-white">
                     세계 판매 1위 · 시장 점유율 1위<br>
                     자동 분유제조기
                 </p>        
@@ -251,30 +234,14 @@
         </section>
     </main>
 
-    <footer id="footer">
-        <div class="cont-wrap">
-            <h6><img src="../pop/images/logo-foot.png" alt="babybrezza" /></h6>
-            <div class="foot-txt">
-                대표 : 박강민 <em>｜</em> 개인정보관리책임 : info@babybrezza.kr<em>｜</em>
-                <address>경기도 고양시 일산동구 일산로 138, 일산테크노타운 715</address>
-                <span class="copy">COPYRIGHT © BABYBREZZA ALL RIGHTS RESERVED.</span>
-            </div>
-            <div class="fnb">
-                <a href="#none"><img src="../pop/images/icon-foot-01.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-02.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-03.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-04.png" alt="" /></a>
-                <a href="#none"><img src="../pop/images/icon-foot-05.png" alt="" /></a>
-                
-            </div>
-            <a href="#header" class="top">위로가기</a>
-        </div>
-    </footer>
-
+    <div w3-include-html="../inc/_footer.html"></div>
 
     
-</div>  
-  <!-- <script>
-    AOS.init();
-  </script> -->
+</div> <!--//wrap-->
+
+<script>
+includeHTML();
+</script>
+
+
 </body>

@@ -76,7 +76,7 @@ header .lnb a.store span{
 	height: 33px;
 	background-size: 134px 33px;
 	font-size: 12px;
-	color: #fff;
+	color: #fff !important;
 	display: inline-block;
 	text-align: center;
 	padding-top: 8px;
@@ -365,7 +365,11 @@ h3.title{
 }
 
 #content{
+	width: 1300px;
+	margin: 0 auto;
 	padding-top: 100px;
+	border: 1px solid red;
+	min-height: 600px;
 }
 
 /*login-bob*/
@@ -584,4 +588,105 @@ h3.title{
 .agree-input dl input[type="checkbox"]:checked + label{
 	color: #00b4ff;
 	font-size: 18px;
+}
+
+
+/*sidepanel*/
+.sidepanel {
+	height: 250px; /* Specify a height */
+	width: 0; /* 0 width - change this with JavaScript */
+	height: 100vh;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black*/
+	overflow-x: hidden;
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+	display: block;
+	
+  }
+  .sidepanel .inner{
+	position: relative;
+}
+
+  .sidepanel a.closebtn {
+	position: absolute;
+	top: 28px;
+	right: 15px;
+	font-size: 36px;
+	width: 30px;
+	height: 30px;
+	background: url(../images/icon-close-white.png) center center no-repeat;
+	background-size: 40px;
+	font-size: 0;
+	text-indent: -9999px;
+
+  }
+
+  .sidepanel  a{
+	  color:#fff;
+  }
+
+
+/*side-top*/
+.side-header{
+	border-bottom: 0.5px solid #fff;
+	padding: 25px 20px;
+}
+.side-header a.logo{
+	background: url(../images/h1-logo-off.png) left top no-repeat;
+	width: 150px;
+	background-size: 150px auto;
+	font-size: 0;
+	text-indent: -9999px;
+}
+
+.side-header  a.store{
+	position:absolute;
+	right: 60px;
+	top: 30px;
+	font-size: 0;
+	text-indent: -9999px;
+	width: 25px;
+	height: 25px;
+	background: url(../images/icon-naver-store.png) left top;
+	background-size: 25px;
+
+}
+
+.side-lnb{
+	display: block;
+	text-align: right;
+	padding-top: 20px;
+}
+
+/*.side-menu*/
+.side-munu{
+	
+}
+.side-munu a{
+	display: block;
+}
+
+.side-munu  ul > li > a{
+	padding: 25px 10px;
+}
+
+.side-munu  ul.depth2{
+	background-color: #333;
+	padding: 10px 25px;
+}
+
+.side-munu .depth3{
+	background-color: #54c3f1;
+	padding: 10px;
+	border-radius: 10px;
+}
+.side-munu .depth3 a{
+	font-size: 15px;
+	border-bottom: 1px solid #fff;
+}
+.side-munu .depth3 a:last-child{
+	border-bottom: none;
 }
