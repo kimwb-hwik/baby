@@ -69,6 +69,7 @@ a:active{color:#000;text-decoration:none;}
 .relative{position:relative !important;}
 
 /* typography */
+.font50{ font-size:50px;line-height:50px;}
 .font38{ font-size:38px;line-height:52px;}
 .font32{ font-size:32px; line-height:48px;}
 .font30{ font-size:30px;}
@@ -88,7 +89,7 @@ a:active{color:#000;text-decoration:none;}
 
 .text-blue{color:#54c3f1;}
 .text-red{color:#d40000;}
-.text-ygreen{color:#70b340;}
+.text-ygreen{color:#a6cd64;}
 .text-green{color:#00592d;}
 .text-black{color:#000;}
 .text-gray{color:#666;}
@@ -172,6 +173,7 @@ a:active{color:#000;text-decoration:none;}
  .pt30{padding-top:30px;}
  .pt40{padding-top:40px;}
  .pt80{padding-top:80px;}
+ .pt100{padding-top:100px;}
  .pt113{padding-top:113px;}
  .pt130{padding-top:130px;}
 
