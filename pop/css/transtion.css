@@ -1,0 +1,36 @@
+/*tranition*/
+.transition-top,
+.transition-left,
+.transition-right,
+.transition-bottom{
+	opacity: 0.8;
+}
+.transition-top:hover{
+	padding-top: 100px;
+	opacity: 1;
+	transition: padding-top 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+}
+.transition-bottom:hover{
+	padding-bottom: 100px;
+	opacity: 1;
+	transition: padding-bottom 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+}
+
+.transition-left:hover{
+	opacity: 1;
+	padding-left: 100px;
+	transition: padding-left 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+}
+
+.transition-right:hover{
+	opacity: 1;
+	padding-right: 100px;
+	transition: padding-right 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+}
+
+
+.transition-opacity:hover{
+	opacity: 0.9;
+	transition: opacity 0.5s 0.1s;
+}
+

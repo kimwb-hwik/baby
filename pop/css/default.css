@@ -57,6 +57,7 @@ a:active{color:#000;text-decoration:none;}
 
 /* 공통
  ----------------------------------------------------------------------------*/
+
 .bgnone {background: none;}
 .disnone { display: none !important;}
 .disblock {display: block !important;}
@@ -69,13 +70,15 @@ a:active{color:#000;text-decoration:none;}
 .relative{position:relative !important;}
 
 /* typography */
-.font50{ font-size:50px;line-height:50px;}
+.font80{ font-size:80px;line-height:85px; letter-spacing: -5px; word-spacing: -5px; }
+.font50{ font-size:50px;line-height:55px;}
 .font38{ font-size:38px;line-height:52px;}
+.font34{ font-size:34px; line-height:44px;}
 .font32{ font-size:32px; line-height:48px;}
 .font30{ font-size:30px;}
-.font28{ font-size:28px;}
+.font28{ font-size:28px;line-height:38px;}
 .font26{ font-size:26px;}
-.font24{ font-size:24px !important;}
+.font24{ font-size:24px !important; line-height:34px;}
 .font22{ font-size:22px;}
 .font20{ font-size:20px;}
 .font18{ font-size:18px;}
@@ -94,6 +97,7 @@ a:active{color:#000;text-decoration:none;}
 .text-black{color:#000;}
 .text-gray{color:#666;}
 .text-darkgray{color:#333;}
+.text-lightgray{color:#999;}
 .text-white{color:#fff !important;}
 
 
@@ -137,14 +141,14 @@ a:active{color:#000;text-decoration:none;}
  .mt190 {margin-top:190px;}
  .mt200 {margin-top:200px;}
 
- .mb0{margin-bottom:0;}
- .mb5{margin-bottom:5px;}
- .mb10{margin-bottom:10px;}
+ .mb0{margin-bottom:0 !important;}
+ .mb5{margin-bottom:5px !important;}
+ .mb10{margin-bottom:10px !important;}
  .mb15{margin-bottom:15px;}
  .mb20{margin-bottom:20px;}
  .mb30{margin-bottom:30px;}
  .mb40{margin-bottom:40px;}
- .mb50{margin-bottom:50px;}
+ .mb50{margin-bottom:50px !important;}
  .mb60{margin-bottom:60px;}
  .mb70{margin-bottom:70px;}
  .mb80{margin-bottom:80px;}
@@ -198,7 +202,13 @@ a:active{color:#000;text-decoration:none;}
 
  .p20{padding:20px !important;}
  .m20{padding:20px !important;}
- .pd0{padding:0 !important;}
+ .p0{padding:0 !important;}
+ .m0{margin:0 !important;}
+
+
+
+
+ .w550{width: 550px;}
 
 
 :after{display:inline-block; vertical-align:middle;}
@@ -213,4 +223,3 @@ a:active{color:#000;text-decoration:none;}
 	vertical-align: bottom;
 	
 }
-
