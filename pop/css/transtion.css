@@ -2,35 +2,62 @@
 .transition-top,
 .transition-left,
 .transition-right,
-.transition-bottom{
-	opacity: 0.8;
+.transition-bottom,
+.transition-opacity{
+	opacity: 1;
+	
 }
 .transition-top:hover{
-	padding-top: 100px;
-	opacity: 1;
-	transition: padding-top 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+	opacity: 1;	
+	/* transition: padding-top 0.5s 0.1s cubic-bezier(.25,.44,.57,.88); */
+	transition: all 0.5s ease-out;
+	transform: translate(0,-100px);
+
 }
 .transition-bottom:hover{
-	padding-bottom: 100px;
 	opacity: 1;
-	transition: padding-bottom 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+	/* transition: padding-bottom 0.5s 0.1s cubic-bezier(.25,.44,.57,.88); */
+	transition: all 0.5s ease-out;
+	transform: translate(100px,0);
 }
 
 .transition-left:hover{
 	opacity: 1;
-	padding-left: 100px;
-	transition: padding-left 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+	/* transition: padding-left 0.5s 0.1s cubic-bezier(.25,.44,.57,.88); */
+	transition: all 0.5s ease-out;
+	transform: translate(100px,0);
 }
 
 .transition-right:hover{
 	opacity: 1;
-	padding-right: 100px;
-	transition: padding-right 0.5s 0.1s cubic-bezier(.25,.44,.57,.88);
+	/* transition: padding-left 0.5s 0.1s cubic-bezier(.25,.44,.57,.88); */
+	transition: all 0.5s ease-out;
+	transform: translate(-100px,0);
 }
 
 
-.transition-opacity:hover{
-	opacity: 0.9;
-	transition: opacity 0.5s 0.1s;
+.effect {
+    opacity:0.8;
 }
+
+
+/* .effect.action {
+    opacity: 1;
+    -ms-transition: all 1s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+} */
+
+.transition-scale:hover{
+	opacity: 1 ;
+	transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	transform: translate(10px,10px);
+	transform: scale(1.2,1.2);
+	
+}
+
 

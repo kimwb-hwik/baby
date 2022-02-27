@@ -7,6 +7,8 @@ $(function(){
 	}
 	Headerfixed();
 	qnalist();
+	droplist();
+	ActionHover;
 	
 		
 
@@ -28,7 +30,7 @@ function Headerfixed(){
 //자주하는 질문
 function qnalist(){
 	
-	$('.qna-list a.drop').click(function(e) {
+	$('.qna-list .drop').click(function(e) {
 		e.preventDefault();
 		$(this).removeClass('on');
 				
@@ -39,6 +41,23 @@ function qnalist(){
 		}
 	});
 }
+
+//detail droplist
+//droplist
+function droplist(){
+	
+	$('.drop-list').click(function(e) {
+		e.preventDefault();
+		$(this).removeClass('on');
+				
+		$(this).children('.dropbox').slideUp('fast');
+		if (!$(this).children('.dropbox').is(':visible')) {
+			$(this).addClass('on');
+			$(this).children('.dropbox').slideDown(); //parents 다은위치
+		}
+	});
+}
+
 
 
 
@@ -127,6 +146,10 @@ for (i = 0; i < z.length; i++) {
 	}
 }
 }
+
+
+
+
 
 
 
