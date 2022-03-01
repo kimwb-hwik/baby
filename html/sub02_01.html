@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../pop/css/default.css">
     <link rel="stylesheet" href="../pop/css/form.css">
     <link rel="stylesheet" href="../pop/css/style.css">
+    <link rel="stylesheet" href="../pop/css/style-mobile.css">
     
 
 
@@ -37,7 +38,7 @@
         <div class="master-wrap">
             <div class="master-info">
                 <section class="section01 ">
-                    <h3 class="slider-txt transition-left">
+                    <h3 class="slider-txt fadeInLeft">
                         <p class="font50 fw500  text-white mb50">
                             Food Maker Deluxe 
                         </p>
@@ -50,13 +51,13 @@
 
                 <section class="section02">
                     <h3 class="slider-txt">
-                        <p class="bg-img indent">
+                        <p class="bg-img indent  text-focus-in">
                             one step food maker deluxe
                         </p>
                     </h3>
                 </section> <!--section02-->
                 <section class="section03">
-                    <h3 class="slider-txt  transition-bottom">
+                    <h3 class="slider-txt slide-right delay1">
                         <p class="font50  fw500  mb50">
                             버튼 하나로<br>이유식 자동완성
                         </p>
@@ -86,7 +87,7 @@
                         <div id="tab01" class="tabcontent" style="display:block;">
                             <div class="bg-steam01 cont-wrap">
                                 <h4 class="slide-text">
-                                    <p class="font28 mb30  text-white">맛과 재료 본질의 가치를 더 높이는</p>
+                                    <p class="font28 mb30  text-white">1맛과 재료 본질의 가치를 더 높이는</p>
                                     <p class="font50  text-white">스팀</p>
                                 </h4>
                             </div>
@@ -95,7 +96,7 @@
                         <div id="tab02" class="tabcontent">
                             <div class="bg-steam01 cont-wrap">
                                 <h4 class="slide-text ">
-                                    <p class="font28 mb30 text-white">맛과 재료 본질의 가치를 더 높이는</p>
+                                    <p class="font28 mb30 text-white">2맛과 재료 본질의 가치를 더 높이는</p>
                                     <p class="font50 text-white">스팀</p>
                                 </h4>
                             </div>
@@ -110,7 +111,7 @@
                         <div id="tab03" class="tabcontent">
                             <div class="bg-steam01 cont-wrap">
                                 <h4 class="slide-text">
-                                    <p class="font28 mb30  text-white">맛과 재료 본질의 가치를 더 높이는</p>
+                                    <p class="font28 mb30  text-white">3맛과 재료 본질의 가치를 더 높이는</p>
                                     <p class="font50  text-white">스팀</p>
                                 </h4>
                             </div>
@@ -146,12 +147,54 @@
                         </p>
                     </h3>
 
-                    <div class="bg-mix01 cont-wrap"></div>
+                    <div class="bg-mix01 cont-wrap">
+                    </div>
 
                     <h4 class="font50 i-steam fw600 tc">
                         스팀
                     </h4>
-                    <div class="bg-mix02"></div>
+                    <!-- <div class="bg-mix02"></div> -->
+                    <div class="img-selider ">
+                        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                        <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+                        
+                        <div class="slider">
+   
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        $( document ).ready( function() {
+                          $( '.slider' ).bxSlider( {
+                            auto: true,
+                            pause: 2000,
+                            autoControls: true,
+                            autoHover: true,
+                            minSlides: 3,
+                            maxSlides: 3,
+                            slideWidth: 960,
+                            slideMargin: 30,
+                            controls: false,
+                            prevText:"",
+                            nextText:""
+                          } );
+                        } );
+                    </script>
+
 
                     <div class="font28  tc mb80 mt80 ">
                         - 영양소 파괴없이 이유식 재료 준비 <br>
@@ -163,7 +206,46 @@
                     </h4>
 
                   
-                    <div class="bg-mix03"></div>
+                    <div class="img-selider ">
+                        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                        <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+                        
+                        <div class="slider">
+   
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+
+                            <div>
+                                <img src="../pop/images/img-slider.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        $( document ).ready( function() {
+                          $( '.slider' ).bxSlider( {
+                            auto: true,
+                            pause: 2000,
+                            autoControls: true,
+                            autoHover: true,
+                            minSlides: 3,
+                            maxSlides: 3,
+                            slideWidth: 960,
+                            slideMargin: 30,
+                            controls: false,
+                            prevText:"",
+                            nextText:""
+                          } );
+                        } );
+                    </script>
 
                     <div class="font28  tc mt80">
                         - 발육단계에 맞는 질감조절

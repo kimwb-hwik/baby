@@ -61,3 +61,19 @@
 }
 
 
+/*main
+
+.section-06 ul li:nth-child(odd){
+	transform: translateY(0px);
+    opacity: 0;
+	border:1px solid red;
+
+}
+
+.section-06:hover ul li:nth-child(odd){
+	transform: translateY(70px);
+    opacity: 0;
+    transition: transform 1s, 
+				opacity 1s;
+	
+}*/

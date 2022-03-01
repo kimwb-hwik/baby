@@ -1,14 +1,16 @@
 $(function(){
+	Headerfixed();
 	//NoticeBox();
 	//SettingBox();
 	
-	if($('.side-menu').size() != 0){
-		Sidepopup(); //메뉴
-	}
-	Headerfixed();
+	// if($('.side-menu').size() != 0){
+	// 	Sidepopup(); //메뉴
+	// }
+	
 	qnalist();
-	droplist();
-	ActionHover;
+	//droplist();
+	//ActionHover;
+	//add();
 	
 		
 
@@ -17,7 +19,7 @@ $(function(){
 function Headerfixed(){
 	var menu = $( 'header' ).offset();
 		$( window ).scroll( function() {
-			if ( $( document ).scrollTop() > menu.top ) {
+			if ( $( document ).scrollTop() > header.top ) {
 				$( 'header' ).addClass( 'fixed' );
 			} else {
 				$( 'header' ).removeClass( 'fixed' );
@@ -44,63 +46,63 @@ function qnalist(){
 
 //detail droplist
 //droplist
-function droplist(){
+// function droplist(){
 	
-	$('.drop-list').click(function(e) {
-		e.preventDefault();
-		$(this).removeClass('on');
+// 	$('.drop-list').click(function(e) {
+// 		e.preventDefault();
+// 		$(this).removeClass('on');
 				
-		$(this).children('.dropbox').slideUp('fast');
-		if (!$(this).children('.dropbox').is(':visible')) {
-			$(this).addClass('on');
-			$(this).children('.dropbox').slideDown(); //parents 다은위치
-		}
-	});
-}
+// 		$(this).children('.dropbox').slideUp('fast');
+// 		if (!$(this).children('.dropbox').is(':visible')) {
+// 			$(this).addClass('on');
+// 			$(this).children('.dropbox').slideDown(); //parents 다은위치
+// 		}
+// 	});
+// }
 
 
 
 
 // 알림 박스
-function  NoticeBox(){
-	$('#gnb ul li.notice button').on('click', function(e){
-		e.preventDefault();
-		$('.NoticeBox').show();
-	});
+// function  NoticeBox(){
+// 	$('#gnb ul li.notice button').on('click', function(e){
+// 		e.preventDefault();
+// 		$('.NoticeBox').show();
+// 	});
 	
-	$('.NoticeBox button.close').on('click', function(e){
-		e.preventDefault();
-		$('.NoticeBox').hide();
+// 	$('.NoticeBox button.close').on('click', function(e){
+// 		e.preventDefault();
+// 		$('.NoticeBox').hide();
 		
-	});
-}
+// 	});
+// }
 
 
 
 //사이드 팝업
-function Sidepopup(){
-	$('.side-menu-btn').on('click',function(e){
-		e.preventDefault();
+// function Sidepopup(){
+// 	$('.side-menu-btn').on('click',function(e){
+// 		e.preventDefault();
 		
-		$('.side-menu').animate({left: '0%'});
-		$('.side-menu-close').fadeIn();
-		$('#wrap').css({'position':'fixed'});
-		/*[2017-06-01 최정아] 스크롤 발생하지 않는 페이지에서 페이지 하단에 가로로 하얀 배경이 생겨 'position':'fixed'만 사용 
-		 * $('#wrap').css({'overflow':'hidden' , 'position':'fixed'});*/
-		$('.bgDim').height($(document).height()).toggle();
-		return false;
-	});
-	$('.side-menu-close, .bgDim').on('click',function(e){
-		e.preventDefault();
-		$('.side-menu').animate({left: '-100%'});
-		$('.side-menu-close').hide();
-		$('#wrap').css({'overflow':'' , 'position':''});
-		$('.bgDim').height($(document).height()).toggle();
+// 		$('.side-menu').animate({left: '0%'});
+// 		$('.side-menu-close').fadeIn();
+// 		$('#wrap').css({'position':'fixed'});
+// 		/*[2017-06-01 최정아] 스크롤 발생하지 않는 페이지에서 페이지 하단에 가로로 하얀 배경이 생겨 'position':'fixed'만 사용 
+// 		 * $('#wrap').css({'overflow':'hidden' , 'position':'fixed'});*/
+// 		$('.bgDim').height($(document).height()).toggle();
+// 		return false;
+// 	});
+// 	$('.side-menu-close, .bgDim').on('click',function(e){
+// 		e.preventDefault();
+// 		$('.side-menu').animate({left: '-100%'});
+// 		$('.side-menu-close').hide();
+// 		$('#wrap').css({'overflow':'' , 'position':''});
+// 		$('.bgDim').height($(document).height()).toggle();
 		
-		return false;
-	});
+// 		return false;
+// 	});
 	
-}
+// }
 
 
 
@@ -148,6 +150,26 @@ for (i = 0; i < z.length; i++) {
 }
 
 
+//accordion
+
+function accordion(){
+
+var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+        }
+
+	};
 
 
 

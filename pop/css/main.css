@@ -1,4 +1,6 @@
 
+@import url("common.css");
+
 html,
 body {
     margin: 0;
@@ -27,9 +29,9 @@ body {
 }
 
 #header{
-	background: url(../images/bg-visual.png) center top no-repeat;
-	background-size: cover;
-	height: 960px;
+	/* background: url(../images/bg-visual.png) center top no-repeat;
+	background-size: cover; */
+	height: auto;
 	position: relative;
 	
 }
@@ -38,6 +40,9 @@ header{
 	
 	text-align: center;
 	padding-top: 40px;
+	position: absolute;
+	z-index: 3;
+	width: 100%;
 }
 header h1{
 	margin-bottom: 50px;
@@ -121,7 +126,7 @@ header.fixed{
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 999;
+	z-index: 9999;
 
 	transition-property: background-color;
 	transition-duration: 0.5s;
@@ -181,12 +186,41 @@ header.fixed .lnb a.menu{
 
 /*main-visual*/
 .main-visual{
-	position: relative;
+	/* position: absolute;
+	width:100%;
+	height: 100%;
+	left:0;
+	top: 0;
+	z-index: 1; */
+}
+.main-visual .video{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+.main-visual video{
+	/* width: 100%; */
+	width: 100%;
+	/* width: auto !important;
+  	height: 100%; */
+}
+
+.main-visual::after{
+	content:"";
+	width: 100%;
+	height: 98.9%;
+	background: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
 }
 
 .main-visual span{
 	display: inline-block;
-	
 	background: url(../images/bg-visual-txt.png) left top no-repeat;
 	width: 710px;
 	height: 155px;
@@ -196,15 +230,17 @@ header.fixed .lnb a.menu{
     top: 307px;
 	font-size: 0;
 	text-indent: -9999px;
+	display: none;
 }
 
 /*quick-menu*/
 .quick-menu{
 	position: absolute;
-	right: 0;
+	right: 50px;
 	top: 50%;
 	width: 258px;
 	text-align: right;
+	z-index: 6;
 }
 .quick-menu a{
 	display:inline-block;
@@ -283,13 +319,34 @@ section{
 	position: relative;
 }
 .section-01{
+	overflow: hidden;
 	background:url(../images/bg-mom.png) center center no-repeat;
-	height: 960px;
+	height: 760px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	
 }
+/* 
+.section-01 .swiper-wrapper {
+	
+}
+.section-01 .swiper-wrapper .swiper-slide{
+	
+
+}
+.section-01 .swiper-wrapper .swiper-slide:nth-of-type(1){
+	background:url(../images/bg-mom.png) center center no-repeat;
+	
+}
+.section-01 .swiper-wrapper .swiper-slide:nth-of-type(2){
+	 background:url(../images/bg-mom.png) center center no-repeat;
+	
+}
+.section-01 .swiper-wrapper .swiper-slide:nth-of-type(3){
+	background:url(../images/bg-mom.png) center center no-repeat;
+	
+} */
 
 /*section-02*/
 .section-02{
@@ -300,32 +357,28 @@ section{
 	align-items: center;
 }
 
-.section-02 h2.title{
+.section-02 h2.title{ 
 	padding-left: 100px;
+
+
+	/* -webkit-animation: fadeInLeft 0.8s ease-out forwards ;
+	        animation: fadeInLeft 0.8s ease-out forwards; */
 }
 
 
-.section-02::before{
+.section-02 div.effect{
 	content: "";
 	background:url(../images/bg-txt-01.png) left top no-repeat;
 	width: 100%;
 	height: 116px;
 	position: absolute;
-	left: 0;
+	left: 50px;
 	top: 125px;
-}
-
-
-.section-02:hover::before,
-.section-02:hover h2.title,
-.section-03:hover::before,
-.section-03:hover h2.title{
-	left:100px;
-	margin-left: 100PX;
-	transition:left 1s .2s cubic-bezier(.73,.34,.6,1.18),
-			   margin-left 1s .3s cubic-bezier(.73,.34,.6,1.18);
 	
+
 }
+
+
 
 /*section-03*/
 
@@ -339,25 +392,30 @@ section{
 
 .section-03 h2.title{
 	padding-left: 100px;
+
+	/* -webkit-animation: fadeInLeft 0.8s ease-out forwards ;
+	        animation: fadeInLeft 0.8s ease-out forwards; */
 }
 
-.section-03::before{
+.section-03  div.effect{
 	content: "";
 	background:url(../images/bg-txt-02.png) left top no-repeat;
 	width: 100%;
 	height: 116px;
 	position: absolute;
-	left: 0;
+	left: 50px;
 	top: 125px;
-}
-/*section-04*/
 
+}
+
+/*section-04*/
 .section-04{
 	height: 2982px;
 	display: flex;
 	flex-direction: column;
 	/*align-items: center;*/
 	background: #000 url(../images/bg-pollen-02.png) left bottom no-repeat;
+	background-size: cover;
 	padding-top: 150px;
 	background-color: #111;
 }
@@ -411,12 +469,12 @@ section{
 	content: "";
 	height: 437px;
 	display: block;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 	
 }
 
 
-.best-wrap .number::after{
+.best-wrap .number div.effect{
 	background: url(../images/bg-txt-best.png) center center no-repeat;
 	background-size: contain;
 	content: "";
@@ -452,7 +510,7 @@ section{
 	margin-bottom:330px ;
 }
 
-.section-04 .medal::after{
+.section-04 .medal div.effect{
 	content: "";
 	background: url(../images/bg-prime.png) center center no-repeat;
 	background-size: contain;
@@ -773,102 +831,3 @@ footer a.top{
 }
 
 
-/*sidepanel*/
-.sidepanel {
-	height: 250px; /* Specify a height */
-	width: 0; /* 0 width - change this with JavaScript */
-	height: 100vh;
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Stay on top */
-	top: 0;
-	left: 0;
-	background-color: #111; /* Black*/
-	overflow-x: hidden;
-	transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
-	display: block;
-	
-  }
-  .sidepanel .inner{
-	position: relative;
-}
-
-  .sidepanel a.closebtn {
-	position: absolute;
-	top: 28px;
-	right: 15px;
-	font-size: 36px;
-	width: 30px;
-	height: 30px;
-	background: url(../images/icon-close-white.png) center center no-repeat;
-	background-size: 40px;
-	font-size: 0;
-	text-indent: -9999px;
-
-  }
-
-  .sidepanel  a{
-	  color:#fff;
-  }
-
-
-/*side-top*/
-.side-header{
-	border-bottom: 0.5px solid #fff;
-	padding: 25px 20px;
-}
-.side-header a.logo{
-	background: url(../images/h1-logo-off.png) left top no-repeat;
-	width: 150px;
-	background-size: 150px auto;
-	font-size: 0;
-	text-indent: -9999px;
-}
-
-.side-header a.store{
-	position:absolute;
-	right: 60px;
-	top: 30px;
-	font-size: 0;
-	text-indent: -9999px;
-	width: 25px;
-	height: 25px;
-	background: url(../images/icon-naver-store.png) left top;
-	background-size: 25px;
-
-}
-
-.side-lnb{
-	display: block;
-	text-align: right;
-	padding-top: 20px;
-}
-
-/*.side-menu*/
-.side-munu{
-	
-}
-.side-munu a{
-	display: block;
-}
-
-.side-munu  ul > li > a{
-	padding: 25px 10px;
-}
-
-.side-munu  ul.depth2{
-	background-color: #333;
-	padding: 10px 25px;
-}
-
-.side-munu .depth3{
-	background-color: #54c3f1;
-	padding: 10px;
-	border-radius: 10px;
-}
-.side-munu .depth3 a{
-	font-size: 15px;
-	border-bottom: 1px solid #fff;
-}
-.side-munu .depth3 a:last-child{
-	border-bottom: none;
-}

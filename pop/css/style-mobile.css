@@ -1,0 +1,354 @@
+
+@media screen and (max-width: 1016px) { 
+	body{
+
+
+	}	
+
+	#gnb,
+	#snb,
+	.lnb .store,
+	.lnb .login,
+	.lnb .join,
+	.quick-menu{
+		display: none;
+	}
+
+	header{
+		padding:20px 15px;
+		height: 55px;
+		text-align: left;
+	}
+
+	header h1{
+		margin-bottom: 0;
+	}
+
+	header h1 img{
+		height: 21px;
+	}
+
+	header .lnb{
+		right: 15px;
+		top: 15px;
+	}
+
+	header .lnb a.menu{
+		padding: 0;
+		margin: 0;
+		background-size: auto 18px;
+	}
+
+	h2.title{
+		font-size: 25px;
+		margin-bottom: 35px;
+	}
+	h2.title.pt100{
+		padding-top:45px;
+	}
+
+	h3.title{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+
+	#container{
+		min-height: auto;
+	}
+
+	#content{
+		width: auto;
+		padding: 45px 0;
+
+	}
+
+	.cont-wrap{
+		width: auto;
+	}
+
+	/*fixed*/
+	header.fixed{
+		padding:20px 15px;
+		height: 55px;
+		text-align: left;
+	}
+
+	header.fixed h1 {
+		float: none;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	header.fixed h1 img{
+		height: 21px;
+	}
+
+	header.fixed h1 a::before{
+		width: 150px;
+		height: 21px;
+		background-repeat: no-repeat;
+		background-size: auto 21px;
+		margin-bottom: 5px;
+
+	}
+
+	header.fixed .lnb{
+		right: 15px;
+    	top: 15px;
+	}
+
+	header.fixed .lnb a.menu{
+		background-size: auto 18px;
+	}
+
+
+	/*footer*/
+	footer{
+		padding: 30px 15px;
+	}
+	footer h6,footer .fnb{
+		float:none;
+		clear: both;
+		font-size: 12px;
+
+	}
+	.foot-txt{
+		float: none;
+		font-size: 12px;
+		line-height: 22px;
+	}
+
+	footer h6 img{
+		height: 20px;
+	}
+	footer .fnb{
+		margin-top: 20px;
+	}
+	footer .fnb a{
+		width: 30px;
+		height: 30px;
+		margin-left: 0;
+	}
+	footer .fnb a img{
+		height: 30px;
+	}
+	.foot-txt span{
+		margin-top: 20px;
+	}
+
+	footer a.top{
+		width: 50px;
+		height: 50px;
+		background-size: 50px;
+		top: -51px;
+		right: 10px;
+	}
+
+
+	/*.video*/
+	.auto-info .section01 .video{
+		width: auto;
+	}
+
+	/*font*/
+	.font18{
+		font-size: 14px !important;
+	}
+	.font22{
+		font-size: 18px !important;
+	}
+	.font24{
+		font-size: 20px !important;
+	}
+	.font30{
+		font-size: 26px !important;
+	}
+	.font32{
+		font-size: 28px !important;
+	}
+	.mb30{
+		margin-bottom: 15px !important;
+	}
+	
+	.mb80{
+		margin-bottom: 40px !important;
+	}
+
+
+	/*form*/
+	.btn.w550{
+		width: auto;
+	}
+
+	.btn{
+		font-size: 14px;
+		min-width: 65px;
+	}
+
+	.input-box input[type="text"],
+	.input-box input[type="password"],
+	.input-box input[type="serch"]{
+		font-size: 14px !important;
+	}
+
+	/*popup*/
+	div.popup{
+		width: auto;
+		min-height: auto;
+		padding: 35px 20px;
+	}
+
+	div.popup br{
+		display: ;
+	}
+	div.popup b{
+		display: inline;
+	}
+	div.popup .font24{
+		font-size: 14px !important;
+		line-height: 24px !important;
+	}
+
+
+
+	/*btn-list*/
+	.btn-list a{
+		margin-bottom: 10px;
+	}
+
+
+	/*family-register*/
+	.family-register{
+		padding-top: 60px;
+		text-align: left;
+		background: url(../images/bg-sub03-01-01.png) right top no-repeat;
+		height: 900px;
+		background-size: cover;
+
+	}
+	.family-wrap .font18.mb80{
+		padding: 10px;
+	}
+	.family-wrap .font18.mb80 br{
+		display: none;
+	}
+	.family-wrap .font18.mb80 b{
+		display: inline;
+	}
+	.family-wrap .font30{
+		text-align: center;
+	}
+	.family-register{
+	}
+	.family-service{
+		margin-top: 30px;
+	}
+
+	.family-service > div{
+		width: auto;
+		height: 135px;
+		padding-top: 40px;
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	.family-service > div p.font22{
+		margin-bottom: 0;
+		height: auto;
+		margin-left: 50px;
+		text-align: left;
+		padding-right: 20px;
+	}
+	.family-service > div p.font22 br{
+		display: none;
+	}
+	.family-service > div p.icon{
+		text-indent: -99999999999999px;
+		font-size: 0;
+		margin: 0;
+		width: 40px;
+	}
+	.family-service > div p.icon::before{
+		margin: 0;
+		width: 40px;
+		height: 40px;
+		background-size: 40px !important;
+
+	}
+
+	.family-wrap .btn.w550{
+		width: 70%;
+	}
+
+	/*.login-box*/
+	.login-box{
+		width: auto;
+		padding: 0 20px;
+	}
+
+	/*login-step*/
+	.login-step{
+		margin-bottom: 40px;
+	}
+
+	.login-step ol li{
+		width: 70px;
+		height: 70px;
+		padding: 5px 0;
+		font-size: 12px;
+		margin-right: 0;
+	}
+
+	.login-step ol li b{
+		font-size: 18px;
+		margin-bottom: 0;
+		margin-top: 15px;
+		line-height: 10px;
+	}
+
+	.input-box label{
+		font-size: 14px;
+		min-width: 60px !important;
+		padding-left: 10px;
+	}
+
+	.agree-input dl b{
+		font-size: 16px;
+	}
+
+	.btn-login a{
+		margin-bottom: 10px;
+	}
+
+	.login-box .font32{
+		font-size: 20px !important;
+	}
+
+	.login-sns ul a.naver{
+		font-size: 16px;
+		height: 60px;
+		padding-top: 20px;
+	}
+	.login-sns ul a.naver::before{
+		width: 20px;
+		height: 20px;
+		background-size: 20px;
+	}
+
+	.login-sns ul a.kakao{
+		font-size: 16px;
+		height: 60px;
+		padding-top: 20px;
+	}
+	.login-sns ul a.kakao::before{
+		width: 20px;
+		height: 20px;
+		background-size: 20px;
+	}
+
+
+
+
+	
+}/*end*/

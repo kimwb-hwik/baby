@@ -1,57 +1,49 @@
 /*.slide-right*/
 
-.slide-right,
-.section-05 ul li:nth-child(even) h3.title span.slide-txt,
-.section-05 ul li:nth-child(even) h3.title div.bn{
-	-webkit-animation: slide-right 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	        animation: slide-right 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-			animation-iteration-count: infinite; 
+.slide-right{
+	-webkit-animation: slide-right 1.2s ease-out forwards;
+	        animation: slide-right 1.2s ease-out forwards;
+			/*animation-fill-mode: both;*/
+			/*animation-iteration-count: infinite; */
 			/*animation-fill-mode: both;*/
 			/*transition: opacity .33s cubic-bezier(.645,.045,.355,1);*/
-			border: 1px solid red;
+			
+			
 		
 }
 
 
 
 /*.slide-left*/
-.slide-left,
-.section-05 ul li:nth-child(odd) h3.title span.slide-txt,
-.section-05 ul li:nth-child(odd) h3.title div.bn{
-	-webkit-animation: slide-left 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-	        animation: slide-left 3.0s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
-			animation-iteration-count: infinite; 
+.slide-left{
+	-webkit-animation: slide-left  1.2s ease-out forwards;
+	        animation: slide-left  1.2s ease-out forwards;
+			/*animation-iteration-count: infinite; */
 			/*animation-fill-mode: both;*/
 			/*transition: opacity .33s cubic-bezier(.645,.045,.355,1);*/
 		
 }
 
+
 /*delay*/
-.section-05 ul li:nth-child(odd) h3.title div.bn,
-.section-05 ul li:nth-child(even) h3.title div.bn{
-			animation-iteration-count: infinite; 
-			animation-delay: 0.5s;
-		
+.delay0{
+	animation-delay:  0.8s !important;
 
 }
-
-/*delay 1*/
-.section-04 .medal::after{
-	animation-delay: 2s !important;
-		
-
-}
-
-/*delay 1*/
 .delay1{
-	animation-delay: 0.5s !important;
-		
+	animation-delay:  1.4s !important;
 
 }
 
 .delay2{
-	animation-delay: 1s !important;
+	animation-delay: 2s !important;
+}
+.delay3{
+	animation-delay: 3s !important;
+}
 
+.delay3{
+	animation-delay: 4s !important;
 }
 
 
@@ -66,23 +58,22 @@
 .text-focus-in{
 	-webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-			animation-iteration-count: infinite;
+			/* animation-iteration-count: infinite; */
 			animation-fill-mode:animation-fill-mode;
 }
 
 .best-wrap::before,
 .number::after{
-	-webkit-animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	-webkit-animation: text-focus-in 3s ease-out both;
+	        animation: text-focus-in 3s ease-out both;
 			animation-fill-mode:animation-fill-mode;
 }
 .section-04 .medal::before,
-.section-04 .medal span,
 .section-04 .medal::after{
-	-webkit-animation: text-focus-in 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3 both;
-	        animation: text-focus-in 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) 3 both;
+	-webkit-animation: text-focus-in 3s ease-out  both;
+	        animation: text-focus-in 3s ease-out  both;
 			animation-fill-mode:animation-fill-mode;
-			animation-delay: 1s;
+			/* animation-delay: 1s; */
 			/*animation-iteration-count: infinite; */
 }
 
@@ -97,79 +88,46 @@
 
 /*review*/
 
-.slide-top,
-.section-06 ul li:nth-child(odd) {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
-	        animation: slide-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.slide-top {
+	-webkit-animation: slide-top  1.2s ease-out both ;
+	        animation: slide-top  1.2s ease-out both;
 			
-}
-.slide-top,
-.section-06 ul li:nth-child(even) {
-	-webkit-animation: slide-top 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
-	        animation: slide-top 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.slide-top,
-.section-06 .recipe {
-	-webkit-animation: slide-top 3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both ;
-	        animation: slide-top3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-			
-}
+
 
 .bounce-top,
-footer a.top{
-	-webkit-animation: bounce-top 0.9s 5 both;
-	        animation: bounce-top 0.9s 5 both;
+footer a.top:hover{
+	-webkit-animation: bounce-top 3s 1 both;
+	        animation: bounce-top 3s 1 both;
 }
 
 
 /*background*/
 .kenburns-left {
-	-webkit-animation: kenburns-left 5s ease-out 3 backwards ;
-	        animation: kenburns-left 5s ease-out 3 backwards;
+	-webkit-animation: kenburns-left 1.2s ease-out both ;
+	        animation: kenburns-left 1.2s ease-out both;
 }
+
+/*fadeInLeft*/
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	visibility: visible; 
+	animation-duration: 1.2s; 
+  }
 
 /*---------------------------------------------------------------*/
 
 /*paused stop*/
 
-.section-02::before,
-.section-02 h2.title,
-.section-03::before,
-.section-03 h2.title,
-.best-wrap::before,
-.number::after,
-.medal::before,
-.medal span,
-.medal::after,
-.section-06 ul li:nth-child(odd),
-.section-06 ul li:nth-child(even),
-.section-07 h3.title,
-footer a.top,
-.section03 .scale-up-center,
-.section04 .scale-up-center{
-	animation-play-state: paused;
+.effect{
+	animation-play-state: paused ;
 	
 }
 
 /*hover start*/
-.section-02:hover::before,
-.section-02:hover h2.title,
-.section-03:hover::before,
-.section-03:hover h2.title,
-.section-04:hover .best-wrap::before,
-.section08:hover .best-wrap::before,
-.section-04:hover .number::after,
-.section08:hover .number::after,
-.medal:hover::before,
-.medal:hover span,
-.medal:hover::after,
-.section-06:hover ul li:nth-child(odd),
-.section-06:hover ul li:nth-child(even),
-.section-07:hover h3.title,
-footer:hover a.top,
-.section03:hover .scale-up-center,
-.section04:hover .scale-up-center{
+.target-section.active .effect {
 	animation-play-state: running;
 	
 }
@@ -180,6 +138,7 @@ footer:hover a.top,
 	        animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both ;
 			/* //animation-iteration-count: infinite; */
 }
+
 
 
 /* ----------------------------------------------
@@ -230,20 +189,24 @@ footer:hover a.top,
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
+			  opacity: 0.6;
 	}
 	100% {
 	  -webkit-transform: translateX(-100px);
 			  transform: translateX(-100px);
+			  opacity: 1;
 	}
   }
   @keyframes slide-left {
 	0% {
 	  -webkit-transform: translateX(0);
 			  transform: translateX(0);
+			  opacity: 0.6;
 	}
 	100% {
 	  -webkit-transform: translateX(-100px);
 			  transform: translateX(-100px);
+			  opacity: 1;
 	}
   }
   
@@ -409,20 +372,24 @@ footer:hover a.top,
 	0% {
 	  -webkit-transform: translateY(0);
 			  transform: translateY(0);
+			  opacity: 0.5;
 	}
 	100% {
 	  -webkit-transform: translateY(-100px);
 			  transform: translateY(-100px);
+			  opacity: 1;
 	}
   }
   @keyframes slide-top {
 	0% {
 	  -webkit-transform: translateY(0);
 			  transform: translateY(0);
+			  opacity: 0.5;
 	}
 	100% {
 	  -webkit-transform: translateY(-100px);
 			  transform: translateY(-100px);
+			  opacity: 1;
 	}
   }
   
@@ -622,5 +589,39 @@ footer:hover a.top,
 			  opacity: 1;
 	}
   }
+
+  /*여기부터 제대로로로----------------------------------------------------------*/
   
-  
+  /*fadeInLeft*/
+  @-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0.5;
+		-webkit-transform: translateX(-150px);
+		-ms-transform: translateX(-150px);
+		transform: translateX(-150px);
+	  }
+
+	  100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	  }
+  }
+
+  @keyframes fadeInLeft {
+	  0% {
+		opacity: 0.5;
+		-webkit-transform: translateX(-150px);
+		-ms-transform: translateX(-150px);
+		transform: translateX(-150px);
+	  }
+
+	  100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	  }
+	}
+
