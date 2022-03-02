@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bbzzpub</title>
+	
+	<script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../pub/js/front.js"></script>
+
+	
+    <link rel="stylesheet" href="../pub/css/font.css">
+    <link rel="stylesheet" href="../pub/css/default.css">
+    <link rel="stylesheet" href="../pub/css/form.css">
+    <link rel="stylesheet" href="../pub/css/style.css">
+    <link rel="stylesheet" href="../pub/css/style-mobile.css">
+    
+    
+
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+    $window = $(window);
+
+    // 다음 섹션이 브라우저 하단으로부터 200px 만큼 보여질때
+    var delayPosition = 500,
+        // 현재 브라우저의 높이값
+        windowheight; 
+
+    // 브라우저의 크기가 변하면 대상 엘리먼트의 위치값을 다시 할당
+    $window.on('resize', function() {
+        insertTargetPosition();
+    });
+
+    // 스크롤이 이동할때
+    $window.on('scroll', function() {
+        // 현재의 위치 = 스크롤이 이동한 값 + 윈도우 높이 - 처음에 선언한 지연 위치값(200);
+        var position = $window.scrollTop() + windowheight - delayPosition;
+
+        // 아직 활성화되지 않은 타겟 엘리먼트를 순회하여
+        $('.target-section.ready').each(function() {
+        // 활성화되어 있지 않고 타겟의 위차값이 현재 위치값보다 작으면
+        if(!$(this).hasClass('active') && $(this).data('offsetTop') < position) {
+            // 활성화
+            $(this).addClass('active');
+            // 활성화 된 엘리먼트는 이후 타겟에서 제외
+            $(this).removeClass('ready');
+        }
+        });
+    });
+
+    function insertTargetPosition() {
+        windowheight = $window.height(); // 브라우저의 높이값 할당
+        $('.target-section').each(function() { // 모든 대상 엘리먼트에
+        $(this).data('offsetTop', ($(this).offset().top)); // 각자의 위치 값을 할당
+        });
+    }
+
+    (function init() {
+        // 최초 진입시 각 섹션의 위치값을 할당
+        // 컨텐츠 중에 이미지 파일이 있거나 비동기로 가져오는 값이 있다면, 대상 요소들이 모두 불러진 후에
+        // 각 섹션의 위치값을 다시 할당해 줘어야 합니다.
+        insertTargetPosition();
+    })();
+    });
+</script>  
+
+<div id="wrap">
+    <div w3-include-html="../pub/include/_header.html"></div>
+    <div w3-include-html="../pub/include/_sidepanel.html"></div>
+    <div w3-include-html="../pub/include/_snb_sub01.html"></div>
+
+    <div class="quick-menu">
+        <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
+        <a href="#none" class="quick01">빠른메뉴1</a><br>
+        <a href="#none" class="quick02">빠른메뉴1</a><br>
+        <a href="#none" class="close">닫기</a>
+    </div>
+
+    <div id="container">
+        
+        <h2 class="title pt100">분유 세팅번호 찾기</h2>
+
+        <div class="auto-wrap">
+            <div class="auto-info">
+                <section class="section01 tc target-section ready">
+                    <!-- <div class="img-responsive">
+                        <img src="../pub/images/img-sub-01.png" alt="" >
+                    </div> -->
+                    <div class="video">
+                        <video muted autoplay loop>
+                            <source src="../pub/videos/이유식마스터기영상.mp4" type="video/mp4">
+                            <strong>Your browser does not support the video tag.</strong>
+                          </video>
+                    </div>
+
+                    
+                </section><!--section01--> 
+
+                <section class="section02 cont-wrap tc target-section ready">
+                    <h3 class="slider-txt effect slide-top ">
+                        <img src="../pub/images/img-sub-txt-02.png" alt="forlula pro advanced" >
+                    </h3>
+                </section> <!--section02-->
+                <section class="section03 target-section ready">
+                    <h3 class="slider-txt text-white effect scale-up-center delay2">
+                        <p class="font50  fw500  mb30">
+                            쉽다
+                        </p>
+                        <p class="font28">
+                            한번의 터치로 분유타기 자동완성
+                        </p>
+                    </h3>
+
+                </section> <!--section03-->
+                <section class="section04 target-section ready">
+                    <h3 class="slider-txt effect scale-up-center delay2">
+                        <p class="font40 text-white mb40">
+                            베이베 브레짜는 언제 어디서든<br>
+                            내 아이 분유레시피를 기억합니다.
+                        </p>
+                        <p class="font18  text-white mb40">
+                            버튼 하나로 쉽고, 간편하게 그리고 정확하게 7초만에 빠른 분유타기를 경험해보세요.
+                        </p>
+
+                        <a href="#none" class="btn round md bg-blue ">More Point +</a>
+                    </h3>
+                    <div class="img-responsive cont-wrap mt50 mb50">
+                        <img src="../pub/images/img-sub-04.png" alt="" />
+                    </div>
+
+                    <h3 class="slider-txt effect scale-up-center delay2">
+                        <p class="font40 text-white mb40">
+                            정확한 조유 농도
+                        </p>
+                        <p class="font18  text-white mb40 ">
+                            각 분유제조사 협업을 통한 정확한 조유 농도를 실현
+                        </p>
+
+                        <a href="#none" class="btn round md bg-blue ">More Point +</a>
+                    </h3>
+
+                </section> <!--section04-->
+
+                <section class="section05 target-section ready">
+                    <h3 class="slider-txt effect slide-right">
+                        <p class="font40 tl mb50 fw600 text-black ">
+                            배앓이<br>
+                            걱정없이
+                        </p>
+                        <p class="font28 delay1">
+                            국제특허로 인증받은
+                            <br>와류형 조유 매커니즘은
+                            <br>흔들지 않아도 잘 분유 거품 및
+                            <br>기포 발생을 최소화해 배앓이를
+                            <br>예방합니다
+                            
+                        </p>
+                        <a href="#none" class="mt50 btn round md bg-blue ">More Point +</a>
+                    </h3>
+                </section> <!--section05-->
+
+                <section class="section06 target-section ready">
+                   
+                    <h3 class="slider-txt effect slide-left">
+                        <p class="font40 tl mb50 fw600 text-black  ">
+                            밤낮없이 언제나
+                            <br>당신곁엔                
+                        </p>
+                        <p class="font28">
+                            베이비 브레짜만의온수대기시스템은
+                            <br>언제 어디서든 기다리지 않아도
+                            <br>바로 수유 가능한 육아환경을 제공합니다 
+                            
+                        </p>
+                        <a href="#none" class="mt50 btn round md bg-blue ">More Point +</a>
+                    </h3>
+
+                   
+                </section> <!--section06-->
+
+                <section class="section07 target-section ready">
+                    <h3 class="slider-txt effect slide-right">
+                        <p class="font40 tl mb50 fw600 text-black">
+                            신선한 분유
+                            <br>그리고 보관
+                        </p>
+                        <p class="font28">
+                            처음 분유상태 그대로 최상의 분유컨디션을
+                            <br>유지할 수 있도록 도와줍니다.
+                            
+                        </p>
+                        
+                    </h3>
+                </section> <!--section07-->
+
+                <section class="section08 target-section ready">
+                    <div class="best-wrap">
+                        <div class="number">
+                            세계판매1위시장점유율 1위
+                        </div>
+                    </div>
+                    
+                </section><!--//section08-->
+      
+
+            </div><!--//auto-info-->
+
+        </div><!--//auto-wrap-->
+
+    </div><!--//container-->
+
+
+
+   
+
+    <div w3-include-html="../pub/include/_footer.html"></div>
+
+    
+</div>  
+<script>
+includeHTML();
+</script>
+</body>

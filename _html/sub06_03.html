@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bbzzpub</title>
+	
+	<script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../pub/js/front.js"></script>
+
+	
+    <link rel="stylesheet" href="../pub/css/font.css">
+    <link rel="stylesheet" href="../pub/css/default.css">
+    <link rel="stylesheet" href="../pub/css/form.css">
+    <link rel="stylesheet" href="../pub/css/style.css">
+<link rel="stylesheet" href="../pub/css/style-mobile.css">
+    
+
+
+</head>
+<body>
+
+<div id="wrap">
+    <div w3-include-html="../pub/include/_header.html"></div>
+    <div w3-include-html="../pub/include/_sidepanel.html"></div>
+    <div w3-include-html="../pub/include/_snb_sub01.html"></div>
+
+    <div class="quick-menu">
+        <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
+        <a href="#none" class="quick01">빠른메뉴1</a><br>
+        <a href="#none" class="quick02">빠른메뉴1</a><br>
+        <a href="#none" class="close">닫기</a>
+    </div>
+
+    <div id="container">
+        <div id="content">
+            <h2 class="title">회원가입</h2>
+            <div class="login-box">
+
+                <div class="login-step">
+                    <ol>
+                        <li class="">
+                            <b>1</b>
+                            <span>본인인증</span>
+    
+                        </li>
+                        <li class="on">
+                            <b>2</b>
+                            <span>회원가입</span>
+    
+                        </li>
+                        <li class="">
+                            <b>3</b>
+                            <span>가입완료</span>
+    
+                        </li>
+                    </ol>
+                    
+                </div>
+
+                <div class="join-input">
+                    <h3 class="title">회원정보입력</h3>
+                    
+                    <div class="input-box">
+                        <label for="email">이메일<strong class="text-red">*</strong></label>
+                        <input type="text" id="email" placeholder="이메일 주소를 입력해주세요" />
+                        <a href="#none" class="fr btn bg-gray">중복확인</a>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="pw">비밀번호<strong class="text-red">*</strong></label>
+                        <input type="text" id="pw" placeholder="영문(대/소문자), 숫자, 특수문자 중 2가지 이상 조합(8~20자)" />
+                        
+                    </div>
+
+                    <div class="input-box">
+                        <label for="pw1">비밀번호 확인<strong class="text-red">*</strong></label>
+                        <input type="text" id="pw1"  />
+                        
+                    </div>
+                    <span class="text-blue mb30">비밀번호가 일치하지 않습니다. </span>
+
+                    <div class="input-box">
+                        <label for="address">주소<strong class="text-red">*</strong></label>
+                        <input type="text" id="address" placeholder="주소를 입력해주세요"  />
+                        <a href="#none" class="fr btn bg-gray">우편번호</a>
+                        
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" id="address" placeholder="상세 주소를 입력해주세요."  />
+                    </div>
+
+                    <div class="agree-input">
+                        <dl>
+                                <dt>
+                                    <b>전체동의</b>
+                                    <span><input type="checkbox" id="agreeAll" /><label for="agreeAll">동의</label></span>
+                                </dt>
+                                <dd>
+                                    <b>만 14세 이상입니다<strong class="text-red">*</strong> </b>
+                                    <span><input type="checkbox" checked id="agree1" /><label for="agree1">동의</label></span>
+                                </dd>
+                                <dd>
+                                    <b class="text-gray">이용약관<strong class="text-red">*</strong> </b>
+                                    <span><input type="checkbox"  id="agree2" /><label for="agree2">동의</label></span>
+                                </dd>
+                                <dd>
+                                    <b class="text-gray">개인정보취급방침<strong class="text-red">*</strong> </b>
+                                    <span><input type="checkbox"  id="agree3" /><label for="agree3">동의</label></span>
+                                </dd>
+                        </dl>
+                    </div>
+
+                </div><!--//join-input-->
+
+
+
+                <div class="btn-login">
+                    <a href="#none" class="btn block round bg-blue">회원가입</a>
+                    
+                </div>
+                    
+
+            </div><!--//login-box-->
+
+        </div><!--content-->
+    </div><!--//container-->
+
+
+
+   
+
+    <div w3-include-html="../pub/include/_footer.html"></div>
+
+
+    
+</div>  
+<script>
+    includeHTML();
+    </script>
+</body>

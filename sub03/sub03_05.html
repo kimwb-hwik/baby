@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bbzzpub</title>
+	
+	<script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../pub/js/front.js"></script>
+
+	
+    <link rel="stylesheet" href="../pub/css/font.css">
+    <link rel="stylesheet" href="../pub/css/default.css">
+    <link rel="stylesheet" href="../pub/css/form.css">
+    <link rel="stylesheet" href="../pub/css/style.css">
+<link rel="stylesheet" href="../pub/css/style-mobile.css">
+    
+
+
+</head>
+<body>
+    
+<div id="wrap">
+    <div w3-include-html="../pub/include/_header.html"></div>
+    <div w3-include-html="../pub/include/_sidepanel.html"></div>
+    <div w3-include-html="../pub/include/_snb_sub03.html"></div>
+
+    <div class="quick-menu">
+        <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
+        <a href="#none" class="quick01">빠른메뉴1</a><br>
+        <a href="#none" class="quick02">빠른메뉴1</a><br>
+        <a href="#none" class="close">닫기</a>
+    </div>
+
+    <div id="container">
+        <div id="content">
+            <h2 class="title">온라인 고객지원</h2>
+
+            <div class="md-wrap">
+
+                <div class="product-active">
+                    <h3 class="title tl">제품을 선택해주세요</h3> 
+                    <ul>
+                        <li class="on">
+                            <a href="#none">
+                                <p class="img"><img src="../pub/images/img-product01.png" alt=""/></p>
+                                <span>자동 분유제조기</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#none">
+                                <p class="img"><img src="../pub/images/img-product02.png" alt=""/></p>
+                                <span>이유식 마스터기</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#none">
+                                <p class="img"><img src="../pub/images/img-product03.png" alt=""/></p>
+                                <span>젖병 살균 소독기</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="title tl font22">약관 동의<br>
+                   <span class="font18 mt10 font300"> 개인정보 수집 및 이용에 대한 동의</span> <span class="text-red">*</span>
+                </h3> 
+                <div class="agree-input">
+                        
+                    <dl>
+                            <dt>
+                                <b>전체동의</b>
+                                <span><input type="checkbox" id="agreeAll" /><label for="agreeAll">동의</label></span>
+                            </dt>
+                            <dd>
+                                <b>개인정보 수집 <strong class="text-red">*</strong> </b>
+                                <span><input type="checkbox" checked id="agree1" /><label for="agree1">동의</label></span>
+                            </dd>
+                            <dd>
+                                <b class="text-gray">이용약관<strong class="text-red">*</strong> </b>
+                                <span><input type="checkbox"  id="agree2" /><label for="agree2">동의</label></span>
+                            </dd>
+                            <dd>
+                                <b class="text-gray">개인정보취급방침 <strong class="text-red">*</strong> </b>
+                                <span><input type="checkbox"  id="agree3" /><label for="agree3">동의</label></span>
+                                
+                            </dd>
+                            
+                    </dl>
+                </div>
+
+                <div class="input-box disabled">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" disabled  placeholder="홍길동" />
+                </div>
+                <div class="input-box disabled">
+                    <label for="tel">연락처 </label>
+                    <input type="text" id="name" disabled  placeholder="010-4313-5728" />
+                </div>
+                
+                <h3 class="title tl font22 mt50">주소<strong class="text-red font18">*</strong></h3> 
+                <div class="input-box">
+                    <label for="address">주소</label>
+                    <input type="text" id="address" placeholder="주소를 입력해주세요"  />
+                    <a href="#none" class="fr btn bg-gray">우편번호</a>
+
+                    
+                </div>
+                <div class="input-box">
+                    <input type="text" id="address" placeholder="상세 주소를 입력해주세요."  />
+                </div>
+
+                <div class="input-radio none mt50 mb50">
+                    <b>구매처는 어디인가요?<span class="text-red">*</span> </b> <br><br>
+                    <input type="radio" id="radio01" checked><label for="radio01">네이버</label>
+                    <input type="radio" id="radio02"><label for="radio02">오픈마켓</label>
+                    <input type="radio" id="radio03"><label for="radio03">이마트</label>
+                    <input type="radio" id="radio04"><label for="radio04">스타필드</label>
+                    <input type="radio" id="radio05"><label for="radio05">선물</label>
+                </div>
+
+                <div class="input-radio none mt50 mb50">
+                    <b>구매정보 선택(구입시기)<span class="text-red">*</span> </b> <br><br>
+                    <input type="radio" id="radio11" checked><label for="radio11">1개월이내</label>
+                    <input type="radio" id="radio12"><label for="radio12">1년이내</label>
+                    <input type="radio" id="radio13"><label for="radio13">1년~2년 이내</label>
+                    <input type="radio" id="radio14"><label for="radio14">2년 이상</label>
+                    <input type="radio" id="radio15"><label for="radio15">기억 안남</label>
+                </div>
+
+                <div class="input-radio none mt50 mb50">
+                    <b>정품을 사용하고 계신가요?<span class="text-red">*</span> </b> <br><br>
+                    <input type="radio" id="yes" checked><label for="yes">네</label>
+                    <input type="radio" id="no"><label for="no">아니요</label>
+                </div>
+
+                <div class="input-radio none mt50 mb50">
+                    <b>자가진단을 진행하셨나요?<span class="text-red">*</span> </b> <br><br>
+                    <input type="radio" id="yes1" checked><label for="yes1">네</label>
+                    <input type="radio" id="no1"><label for="no1">아니요</label>
+                </div>
+
+                <div class="input-radio none mt50 mb50">
+                    <b>1:1 상담(카카오톡 or 전화상담)을 진행하셨나요?<span class="text-red">*</span> </b> <br><br>
+                    <input type="radio" id="yes2" checked><label for="yes2">네</label>
+                    <input type="radio" id="no2"><label for="no2">아니요</label>
+                </div>
+
+                <h3 class="title tl font22 mt50">제품문의<span class="text-red font18">*</span></h3> 
+                <div class="input-box none">
+                    <select class="select">
+                        <option value=""  disabled selected>사용중인 제품에 어떤 문의가 있으세요?</option>
+                        <option value="" >123123</option>
+                    </select>
+                </div>
+
+                <h3 class="title tl font22 mt50">내용</h3> 
+                <div class="input-box none ">
+                    <textarea class="textarea"
+                    placeholder="제품에 발생한 증상이나 궁금한 점을 남겨주시면 전문상담사가 해피콜을 통해 자세한 상담을 도와드립니다."></textarea>
+                </div>
+
+                <div class="input-cont input-file mt50">
+                    <h3 class="title">파일첨부<span class="font16 text-lightgray pl10">(10mb 이하의 jpg, png만 가능합니다.)</span></h3>
+                    <a href="#none" class="fileaddbox">
+                        <span>사진추가</span>
+                    </a>
+                    <div class="font16 mt10 text-lightgray">파일명이 표시됩니다.</div>
+                </div>
+
+                
+
+                
+            
+                <div class="btn-list tc">
+                    <a href="#none" class="btn block round line-dark">1:1 문의하기
+                    </a>
+                </div>
+                
+            </div><!--//md-wrap-->
+        </div><!--//content-->
+
+    </div><!--//container-->
+
+
+
+   
+
+    <div w3-include-html="../pub/include/_footer.html"></div>
+
+
+    
+</div>  
+<script>
+includeHTML();
+</script>
+</body>

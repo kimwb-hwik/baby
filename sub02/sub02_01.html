@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bbzzpub</title>
+	
+	<script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../pub/js/front.js"></script>
+
+	
+    <link rel="stylesheet" href="../pub/css/font.css">
+    <link rel="stylesheet" href="../pub/css/default.css">
+    <link rel="stylesheet" href="../pub/css/form.css">
+    <link rel="stylesheet" href="../pub/css/style.css">
+    <link rel="stylesheet" href="../pub/css/style-mobile.css">
+    
+
+
+</head>
+<body>
+    
+<div id="wrap">
+    <div w3-include-html="../pub/include/_header.html"></div>
+    <div w3-include-html="../pub/include/_sidepanel.html"></div>
+    <div w3-include-html="../pub/include/_snb_sub02.html"></div>
+
+    <div class="quick-menu">
+        <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
+        <a href="#none" class="quick01">빠른메뉴1</a><br>
+        <a href="#none" class="quick02">빠른메뉴1</a><br>
+        <a href="#none" class="close">닫기</a>
+    </div>
+
+    <div id="container">
+        
+        <h2 class="title pt100">이유식 마스터기</h2>
+
+        <div class="master-wrap">
+            <div class="master-info">
+                <section class="section01 ">
+                    <h3 class="slider-txt fadeInLeft">
+                        <p class="font50 fw500  text-white mb50">
+                            Food Maker Deluxe 
+                        </p>
+                        <p class="font28 text-white">
+                            더 맛있게, 더 간편하게<br>
+                            신선한 베이비푸드
+                        </p>
+                    </h3>
+                </section><!--section01--> 
+
+                <section class="section02">
+                    <h3 class="slider-txt">
+                        <p class="bg-img indent  text-focus-in">
+                            one step food maker deluxe
+                        </p>
+                    </h3>
+                </section> <!--section02-->
+                <section class="section03">
+                    <h3 class="slider-txt slide-right delay1">
+                        <p class="font50  fw500  mb50">
+                            버튼 하나로<br>이유식 자동완성
+                        </p>
+                        <p class="font28">
+                            어렵고 번거로운 이유식을<br>
+                            버튼 터치만으로 완성할 수 있는<br>
+                            간편함.
+                        </p>
+                    </h3>
+
+                </section> <!--section03-->
+                <section class="section04">
+                    <h3 class="slider-txt">
+                        <p class="font40 text-white tc mb60">
+                            이유식 완성까지 필요한 시간은 단 30분
+                        </p>
+                    </h3>
+
+                    <div class="tab-list cont-wrap">
+                        <div class="tab">
+                            <button class="tablinks tab01 indent" onclick="openCity(event, 'tab01')">스팀</button>
+                            <button class="tablinks tab02 indent" onclick="openCity(event, 'tab02')">스팀+믹서</button>
+                            <button class="tablinks tab03 indent" onclick="openCity(event, 'tab03')">믹서</button>
+                        </div>
+
+                         <!-- Tab content -->
+                        <div id="tab01" class="tabcontent" style="display:block;">
+                            <div class="bg-steam01 cont-wrap">
+                                <h4 class="slide-text">
+                                    <p class="font28 mb30  text-white">1맛과 재료 본질의 가치를 더 높이는</p>
+                                    <p class="font50  text-white">스팀</p>
+                                </h4>
+                            </div>
+                        </div>
+                        
+                        <div id="tab02" class="tabcontent">
+                            <div class="bg-steam01 cont-wrap">
+                                <h4 class="slide-text ">
+                                    <p class="font28 mb30 text-white">2맛과 재료 본질의 가치를 더 높이는</p>
+                                    <p class="font50 text-white">스팀</p>
+                                </h4>
+                            </div>
+                            <div class="bg-steam02 cont-wrap">
+                                <h4 class="slide-text">
+                                    <p class="font28 mb30 text-white">발육 단계에 맞는 입자 조절이 가능하도록</p>
+                                    <p class="font50 text-white">믹서</p>
+                                </h4>
+                            </div>
+                        </div>
+                        
+                        <div id="tab03" class="tabcontent">
+                            <div class="bg-steam01 cont-wrap">
+                                <h4 class="slide-text">
+                                    <p class="font28 mb30  text-white">3맛과 재료 본질의 가치를 더 높이는</p>
+                                    <p class="font50  text-white">스팀</p>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <script>
+                            function openCity(evt, cityName) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("tabcontent");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                                }
+                                tablinks = document.getElementsByClassName("tablinks");
+                                for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                }
+                                document.getElementById(cityName).style.display = "block";
+                                evt.currentTarget.className += " active";
+                            }
+                        </script>
+
+
+                    </div><!--//tab-list"-->
+
+                   
+                </section> <!--section04-->
+
+                <section class="section05">
+                    <h3 class="slider-txt tc">
+                        <p class="font50 fw300">
+                            필요에 따라<br>
+                            <strong class="text-ygreen">스팀 or 믹서</strong> 선택
+                        </p>
+                    </h3>
+
+                    <div class="bg-mix01 cont-wrap">
+                    </div>
+
+                    <h4 class="font50 i-steam fw600 tc">
+                        스팀
+                    </h4>
+                    <!-- <div class="bg-mix02"></div> -->
+                    <div class="img-selider ">
+                        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                        <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+                        
+                        <div class="slider">
+   
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        $( document ).ready( function() {
+                          $( '.slider' ).bxSlider( {
+                            auto: true,
+                            pause: 2000,
+                            autoControls: true,
+                            autoHover: true,
+                            minSlides: 3,
+                            maxSlides: 3,
+                            slideWidth: 960,
+                            slideMargin: 30,
+                            controls: false,
+                            prevText:"",
+                            nextText:""
+                          } );
+                        } );
+                    </script>
+
+
+                    <div class="font28  tc mb80 mt80 ">
+                        - 영양소 파괴없이 이유식 재료 준비 <br>
+                        - 육수가 필요없는 채소&육수 베이스<br>
+                        - 고구마, 감자, 계란까지 우리아이 간식까지
+                    </div>
+                    <h4 class="font50 i-mix fw600  tc">
+                        믹서
+                    </h4>
+
+                  
+                    <div class="img-selider ">
+                        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+                        <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                        <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+                        
+                        <div class="slider">
+   
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+
+                            <div>
+                                <img src="../pub/images/img-slider.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        $( document ).ready( function() {
+                          $( '.slider' ).bxSlider( {
+                            auto: true,
+                            pause: 2000,
+                            autoControls: true,
+                            autoHover: true,
+                            minSlides: 3,
+                            maxSlides: 3,
+                            slideWidth: 960,
+                            slideMargin: 30,
+                            controls: false,
+                            prevText:"",
+                            nextText:""
+                          } );
+                        } );
+                    </script>
+
+                    <div class="font28  tc mt80">
+                        - 발육단계에 맞는 질감조절
+                    </div>
+
+                    
+                </section> <!--section05-->
+                <section class="section06">
+                    <h3 class="slider-txt txt01 indent">
+                        <p class="font28 mb80">
+                            초기, 중기, 후기
+                        </p>
+                        <p class="font50">
+                            100가지 이유식 레시피 영상
+                        </p>
+                    </h3>
+
+                    <h3 class="slider-txt txt02 indent">
+                        <p class="font28  mb80">
+                            직관적인 시간&기능 설정
+                        </p>
+                        <p class="font50">
+                            쉽고 간편한 스마트 패널
+                        </p>
+                    </h3>
+
+                    <h3 class="slider-txt txt03 indent">
+                        <p class="font50">
+                            원하는 <strong class="text-ygreen">기능</strong> 선택<br>
+                            5분단위 <strong class="text-ygreen">세밀한 시간</strong> 설정
+                        </p>
+                        
+                    </h3>
+
+                    <h3 class="slider-txt txt04 indent">
+                        <p class="font50 text=white">
+                            요리만큼 간편한 세척&관리
+                        </p>
+                        
+                    </h3>
+
+                    <div class="slider-txt bg-admin cont-wrap txt05">
+                        <p class="font28">요리만큼 간편한 세척&관리</p>
+                    </div>
+
+                    <div class="slider-txt font-wrap bg-logo indent txt06">
+                         babu brezza
+                    </div>
+                </section> <!--section06-->
+      
+
+            </div><!--//master-info-->
+
+            
+            
+        </div><!--//master-wrap-->
+
+    </div><!--//container-->
+
+
+
+   
+
+    <div w3-include-html="../pub/include/_footer.html"></div>
+
+
+    
+</div>  
+<script>
+includeHTML();
+</script>
+</body>

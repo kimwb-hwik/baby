@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bbzzpub</title>
+	
+	<!-- <script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script> -->
+	<script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script>
+	 <script type="text/javascript" src="../pub/js/front.js"></script>
+
+	
+    <link rel="stylesheet" href="../pub/css/font.css">
+    <link rel="stylesheet" href="../pub/css/default.css">
+    <link rel="stylesheet" href="../pub/css/form.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../pub/css/main.css">
+    <link rel="stylesheet" href="../pub/css/main-mobile.css">
+    
+   <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+    <link rel="stylesheet" href="../pub/css/animation.css">
+    
+    
+ 
+    
+
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+        $window = $(window);
+ 
+        // 다음 섹션이 브라우저 하단으로부터 200px 만큼 보여질때
+        var delayPosition =200,
+            // 현재 브라우저의 높이값
+            windowheight; 
+ 
+        // 브라우저의 크기가 변하면 대상 엘리먼트의 위치값을 다시 할당
+        $window.on('resize', function() {
+          insertTargetPosition();
+        });
+ 
+        // 스크롤이 이동할때
+        $window.on('scroll', function() {
+          // 현재의 위치 = 스크롤이 이동한 값 + 윈도우 높이 - 처음에 선언한 지연 위치값(200);
+          var position = $window.scrollTop() + windowheight - delayPosition;
+ 
+          // 아직 활성화되지 않은 타겟 엘리먼트를 순회하여
+          $('.target-section.ready').each(function() {
+            // 활성화되어 있지 않고 타겟의 위차값이 현재 위치값보다 작으면
+            if(!$(this).hasClass('active') && $(this).data('offsetTop') < position) {
+              // 활성화
+              $(this).addClass('active');
+              // 활성화 된 엘리먼트는 이후 타겟에서 제외
+              $(this).removeClass('ready');
+            }
+          });
+        });
+ 
+        function insertTargetPosition() {
+          windowheight = $window.height(); // 브라우저의 높이값 할당
+          $('.target-section').each(function() { // 모든 대상 엘리먼트에
+            $(this).data('offsetTop', ($(this).offset().top)); // 각자의 위치 값을 할당
+          });
+        }
+ 
+        (function init() {
+          // 최초 진입시 각 섹션의 위치값을 할당
+          // 컨텐츠 중에 이미지 파일이 있거나 비동기로 가져오는 값이 있다면, 대상 요소들이 모두 불러진 후에
+          // 각 섹션의 위치값을 다시 할당해 줘어야 합니다.
+          insertTargetPosition();
+        })();
+      });
+    </script>
+
+
+<div id="wrap">
+    
+    <div w3-include-html="../pub/include/_mainheader.html"></div>
+    <div w3-include-html="../pub/include/_sidepanel.html"></div>
+
+    
+    <div class="quick-menu">
+        <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
+        <a href="#none" class="quick01">빠른메뉴1</a><br>
+        <a href="#none" class="quick02">빠른메뉴1</a><br>
+        <a href="#none" class="close">닫기</a>
+    </div>
+
+    <main id="main">
+        <section class="section-01">
+            
+          
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2 class="title">
+                            효율적인 문화 정착과<br>
+                            <b>육아 부모의 편리성</b>
+                        </h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="title">
+                            <b>ONE-Step</b> Technology
+
+                        </h2>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2 class="title">
+                            <b>베이비브레짜는</b> <br>효율적인 육아 문화 정착에 대해<br>
+                           <b>큰 사명감을</b> 갖고 있습니다.
+                            
+                       </h2>
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                mousewheel: {
+                    invert: true,
+                },
+                
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                pagination: {
+                el: ".swiper-pagination",
+                },
+
+                autoplay: {
+                //delay: 2000,
+                },
+
+                
+                
+
+            });
+            </script>
+
+        </section>
+        <section class="section-02 target-section ready">
+            
+            <div class="effect slide-right indent delay1 tl ">one stop</div>
+            <h2 class="title text-white effect slide-right delay1 tl">
+               
+                버튼하나로 <br>
+                <b>쉽고, 빠르고,정확하게</b>
+                <p class="font20 text-white">
+                    육아의 신세계를 넘어 필수 육아템이 되기까지.<br>
+                    불필요한 과정을 줄이고 효율성을 높이기 위한<br>
+                    우리의 끊임없는 고민.
+                    
+                </p>
+            </h2>
+            
+        </section>
+        <section class="section-03 target-section ready tl">
+            <div class="effect slide-right  indent delay1 tl">one stop</div>
+            <h2 class="title  text-white effect slide-right delay1 tl ">
+                타협없는<br>
+                <b>퀄리티  </b>
+                <p class="font20 text-white">
+                    베이비 브레짜와 함께하는 매순간이<br>
+                    늘 감동스럽길 바라는 마음.
+
+                </p>        
+            </h2>
+            
+        </section>
+        <section class="section-04 target-section ready">
+            <div class="best-wrap">
+                <div class="number">
+                   <div class="effect slide-top delay1">  
+                       세계판매1위시장점유율 1위
+                    </div> 
+                  
+                </div>
+            </div>
+            <div class="medal">
+                <span class="effect slide-top delay2">버튼 하나로 전 세계 MOM을 사로잡은 스마트육아템</span>
+                <div class="effect slide-top delay2"></div>
+            </div>
+        </section>
+        <section class="section-05 target-section ready">
+            <h2 class="title ">
+                <b>원칙과 철학  </b>            
+            </h2>
+            <ul>
+                <li>
+                    <h3 class="title">
+                        <span class="slide-txt  effect slide-left delay1"> Compatible</span>
+                        <div class="bn effect slide-left delay1 ">편리
+                            <p class="font20">
+                                사용 &관리용이한<br>
+                                제품 설계 방식을고수    
+                            </p>
+                        </div> 
+                    </h3>
+                    
+                </li>
+                <li>
+                    
+                    <h3 class="title">
+                        <span class="slide-txt  effect slide-right delay1"> Compatible</span>
+                        <div class="bn  effect slide-right delay1">호환
+                            <p class="font20">
+                                폭넓은 호환성으로<br>
+                                다양한 활용
+                            </p>
+                         </div>
+                    </h3>
+                    
+                </li>
+                <li>
+                   
+                    <h3 class="title">
+                        <span class="slide-txt effect slide-left delay2"> Design</span>
+                        <div class="bn effect slide-left delay2">디자인
+                            <p class="font20">
+                                직관성 & 심미성 모두를 만족시킨<br>
+                                디자인과 ui  
+                            </p>
+                        </div>
+                    </h3>
+                    
+                </li>
+                <li>
+                    <h3 class="title">
+                        <span class="slide-txt effect slide-right delay2"> efficiency</span>
+                        <div class="bn  effect slide-right delay2">효율
+                            <p class="font20">
+                                불필요한 과정을 줄이고<br>
+                                효율성을 높이기 위한 고민   
+                            </p>
+                        </div>
+                    </h3>
+                    
+                </li>
+            </ul>
+        </section>
+        <section class="section-06 review target-section ready">
+            <h3 class="title"> <b>Review</b></h3>
+            <ul>
+                <li class="slide-top effect">
+                    <img src="../pub/images/img-review-01.png" alt="저는 모유수유 + 분유를 같이 혼합수유중이라너무 유용하게 쓰고 있어요." />
+                </li>
+                <li class="slide-top effect">
+                    <img src="../pub/images/img-review-02.png" alt="나에게 베이비브레짜란? 나를 슈퍼맨으로 만들어주는 변신도구" />
+                </li>
+                <li class="slide-top effect delay1">
+                    <img src="../pub/images/img-review-03.png" alt="선물받은 펭이의 식사 메이커 🍼#브레짜 육아는 아이템빨!" />
+                </li>
+                <li class="slide-top effect delay1">
+                    <img src="../pub/images/img-review-04.png" alt="“아침부터 부지런히 씻고 자르고 담고 오늘도 맛있게 먹자”  " />
+                </li>
+            </ul>
+            <div class="recipe effect slide-top delay2">
+                <a href="#none">
+                    <img src="../pub/images/img-review-05.png" alt="이유식 마스터하기 바로가기" />
+                </a>
+            </div>
+        </section>
+
+        <section class="section-07 welcome target-section ready">
+            <div class="cont-wrap">
+                <h3 class="title tracking-in-expand effect"><b>베이비 브레짜 가족이 되신걸 환영해요</b></h3>
+                <div class="cont">
+                    <div>
+                        <a href="#none"></a>
+                        <span>분유 세팅번호찾기</span>
+                    </div>
+                    <div>
+                        <a href="#none"></a>
+                        <span>베이비푸드 레시피보기</span>
+                    </div>
+                    <div>
+                        <a href="#none"></a>
+                        <span>기기정품등록</span> 
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <div w3-include-html="../pub/include/_footer.html"></div>
+
+    
+</div> <!--//wrap-->
+
+<script>
+includeHTML();
+</script>
+
+
+</body>

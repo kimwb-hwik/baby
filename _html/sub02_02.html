@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>bbzzpub</title>
+	
+	<script type="text/javascript" src="../pub/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../pub/js/front.js"></script>
+
+	
+    <link rel="stylesheet" href="../pub/css/font.css">
+    <link rel="stylesheet" href="../pub/css/default.css">
+    <link rel="stylesheet" href="../pub/css/form.css">
+    <link rel="stylesheet" href="../pub/css/style.css">
+<link rel="stylesheet" href="../pub/css/style-mobile.css">
+    
+
+
+</head>
+<body>
+    
+<div id="wrap">
+    <div w3-include-html="../pub/include/_header.html"></div>
+    <div w3-include-html="../pub/include/_sidepanel.html"></div>
+    <div w3-include-html="../pub/include/_snb_sub01.html"></div>
+
+    <div class="quick-menu">
+        <a href="#none" class="counsel">무엇을 도와드릴까요?</a>
+        <a href="#none" class="quick01">빠른메뉴1</a><br>
+        <a href="#none" class="quick02">빠른메뉴1</a><br>
+        <a href="#none" class="close">닫기</a>
+    </div>
+
+    <div id="container">
+        
+        <h2 class="title pt100">이유식 마스터기</h2>
+
+        <div class="master-wrap">
+            <div class="master-recipe">
+                <section class="section01 tc">
+                    <h3 class="slider-txt transition-opacity">
+                        <p class="font80 fw500 mb50 ">
+                            Food Maker Deluxe<br>
+                            Recipes
+                        </p>
+                        <p class="font28 text-white">
+                            베이비 브레짜 이유식 마스터기로<br>
+                            매일 간편하게 만드는 신선한 베이비 푸드<br><br>
+                            
+                            버튼 하나로 이유식 완성까지 단 30분이면 충분합니다
+
+                        </p>
+                    </h3>
+                
+
+                    <div class="tab-list">
+                        <div class="tab">
+                            <button class="tablinks tab01 " onclick="openCity(event, 'tab01')">초기</button>
+                            <button class="tablinks tab02 " onclick="openCity(event, 'tab02')">중기</button>
+                            <button class="tablinks tab03 " onclick="openCity(event, 'tab03')">후기</button>
+                            <button class="tablinks tab04 " onclick="openCity(event, 'tab03')">간식</button>
+                        </div>
+
+                        <!-- Tab content -->
+                        <div id="tab01" class="tabcontent" style="display:block;">
+                            <div class="img-recipe01 tc ">
+                               <div class="indent">초기 레시피 설명 </div>
+                            </div>
+                        </div>
+
+                        <div id="tab02" class="tabcontent">
+                            <div class="img-recipe02 tc ">
+                                <div class="indent">중기 레시피 설명 </div>
+                            </div>
+                        </div>
+
+                        <div id="tab03" class="tabcontent">
+                            <div class="img-recipe03 tc ">
+                                <div class="indent">후기 레시피 설명 </div>
+                            </div>
+                        </div>
+
+                        <div id="tab04" class="tabcontent">
+                            <div class="img-recipe04 tc ">
+                                <div class="indent">간식 레시피 설명 </div>
+                            </div>
+                        </div>
+                        
+    
+
+                        <script>
+                            function openCity(evt, cityName) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("tabcontent");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                                }
+                                tablinks = document.getElementsByClassName("tablinks");
+                                for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                }
+                                document.getElementById(cityName).style.display = "block";
+                                evt.currentTarget.className += " active";
+                            }
+                        </script>
+
+
+                    </div><!--//tab-list"-->
+
+                </section><!--section01--> 
+
+            </div><!--//master-recipe-->
+
+            
+            
+        </div><!--//master-wrap-->
+
+    </div><!--//container-->
+
+
+
+   
+
+    <div w3-include-html="../pub/include/_footer.html"></div>
+
+
+    
+</div>  
+<script>
+includeHTML();
+</script>
+</body>
