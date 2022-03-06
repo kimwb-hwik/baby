@@ -262,7 +262,6 @@ textarea.textarea{
 	bottom:0; 
 	background:#fff;
 	transition:all .4s ease;
-	border:1px solid red;
 	display:none;
 }
 

@@ -205,10 +205,11 @@
 	.section-03 h2.title{
 		margin-left: -180px;
 		text-align: left;
+		animation-delay: 0.8s !important;
 	}
 
 	.section-04{
-		height: 1000px;
+		height: 1063px;
 		padding-top: 70px;
 	}
 
@@ -228,11 +229,14 @@
 		margin-top: 0;
 		margin-bottom: 162px;
 		height: 60px;
+		height: 200px;
 	}
 
 	.section-04 .medal span{
 		height: 50px;
 		background-size: contain;
+		margin-bottom: 163px;
+
 	}
 
 	.section-04 .medal div.effect{
@@ -246,16 +250,60 @@
 		padding-top: 50px;
 	}
 
-	.section-05 ul li{
+	 .section-05 ul li{
 		height: 154px;
 		position: relative;
 	}
+	.section-05 ul li h3.title{
+		font-size: 30px;
+		padding: 0;
+		margin: 0;
+	}
+	.section-05 ul li h3.title span.slide-txt{
+		top: 0;
+	}
+	.section-05 ul li:nth-child(even) h3.title span.slide-txt {
+		right: 99px;
+	}
+	.section-05 ul li:nth-child(even) h3.title{
+		padding-right: 100px;
+	}
+	.section-05 ul li h3.title p.font20{
+		font-size: 12px;
+	}
 
+	.section-05 ul li:nth-child(odd)::before{
+		background-size: contain;
+	}
+	.section-05 ul li:nth-child(even)::after{
+		background-size: contain;
+	}
+
+	.section-05 ul li:nth-child(even) h3.title{
+		padding-left: 0;
+	}
+
+	.section-05 ul li:nth-child(3)::before {
+		background: url(../images/bg-info-03.png) 20px top no-repeat;
+		background-size: contain;
+	}
+
+
+/*
 	.section-05 ul li:nth-child(odd)::before,
 	.section-05 ul li:nth-child(even)::after{
 		width: 150px;
 		height: 150px;
 		background-size: cover;
+	}
+	.section-05 ul li:nth-child(odd)::before{
+		float: left;
+		border: 1px solid #000;
+	}
+
+	.section-05 ul li:nth-child(even)::after{
+		border:1px solid red ;
+		float: right;
 	}
 
 
@@ -298,7 +346,7 @@
 		z-index: -1px;
 		background: none;
 	}
-	
+	 */
 
 	/*.section-06*/
 	.section-06{

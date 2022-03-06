@@ -7,8 +7,9 @@ $(function(){
 	// 	Sidepopup(); //메뉴
 	// }
 	
-	qnalist();
-	//droplist();
+	qnaList();
+	sideList();
+	droplist();
 	//ActionHover;
 	//add();
 	
@@ -30,7 +31,7 @@ function Headerfixed(){
 
 //detail qnalist
 //자주하는 질문
-function qnalist(){
+function qnaList(){
 	
 	$('.qna-list .drop').click(function(e) {
 		e.preventDefault();
@@ -44,21 +45,37 @@ function qnalist(){
 	});
 }
 
+//sideList
+function sideList(){
+	
+	$('.side-list .drop').click(function(e) {
+		e.preventDefault();
+		$(this).removeClass('on');
+				
+		$(this).children('.dropbox').slideUp('fast');
+		if (!$(this).children('.dropbox').is(':visible')) {
+			$(this).addClass('on');
+			$(this).children('.dropbox').slideDown(); //parents 다은위치
+		}
+	});
+}
+
+
 //detail droplist
 //droplist
-// function droplist(){
+function droplist(){
 	
-// 	$('.drop-list').click(function(e) {
-// 		e.preventDefault();
-// 		$(this).removeClass('on');
+	$('.drop-list').click(function(e) {
+		e.preventDefault();
+		$(this).removeClass('on');
 				
-// 		$(this).children('.dropbox').slideUp('fast');
-// 		if (!$(this).children('.dropbox').is(':visible')) {
-// 			$(this).addClass('on');
-// 			$(this).children('.dropbox').slideDown(); //parents 다은위치
-// 		}
-// 	});
-// }
+		$(this).children('.dropbox').slideUp('fast');
+		if (!$(this).children('.dropbox').is(':visible')) {
+			$(this).addClass('on');
+			$(this).children('.dropbox').slideDown(); //parents 다은위치
+		}
+	});
+}
 
 
 

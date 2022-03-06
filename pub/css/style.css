@@ -19,6 +19,10 @@ body {
 	
 }
 
+.hidden-phone{display: block;}
+	.hidden-pc{display: none;}
+
+
 .cont-wrap{
 	width: 1400px;
 	margin: 0 auto;
@@ -458,7 +462,7 @@ footer a.top{
 
 }
 .footer-item a{
-	font-size: #111;
+	font-size: 17px;
 }
 
 
@@ -976,7 +980,7 @@ h3.title{
 
 /*.master-info .section06*/
 .master-info .section06{
-	background:#000 url(../images/-new.png) center top no-repeat;
+	background:#000 url(../images/bg-sub02-01-00-new.png) center top no-repeat;
 	background-size: contain;
 	position: relative;
 	height: 3460px;

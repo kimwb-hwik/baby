@@ -93,6 +93,9 @@
 .side-munu  ul > li > a{
 	padding: 15px 20px;
 	position: relative;
+
+}
+.side-munu  ul > li > a:hover{
 }
 .side-munu  ul > li > a::after{
 	
