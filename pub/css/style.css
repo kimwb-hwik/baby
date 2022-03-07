@@ -2516,7 +2516,7 @@ div.popup div.btn-list .btn{
 
 /*story-wrap*/
 .story-wrap{
-	background:#ded4c2 url(../images/bg-story-patton.png) left -120px no-repeat;
+	background:#fff;
 	background-size: 421px 512px;
 	min-height:900px;
 	padding-top: 100px;
@@ -2524,23 +2524,68 @@ div.popup div.btn-list .btn{
 }
 
 .story-main{
-	background:#ded4c2 url(../images/bg-story-main.png) left top no-repeat;
-	background-size: 2000px auto;
-	min-height:900px;
+	/* background:#ded4c2 url(../images/bg-story-main.png) left top no-repeat;
+	background-size: 2000px auto; */
+	background:#fff url(../images/img-sub03_10_right.png) right top no-repeat;
+	background-size: auto 1101px;
+
+	min-height:1101px;
 }
 .story-main .cont-wrap{
 	text-align: center;
-	height: 900px;
+	height: 1100px;
 	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
 }
 
-.story-main .card01{
+.story-main .cont-wrap .fl{
+	width: 849px;
+	height: 1400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.story-main .cont-wrap .cont{
+	width: 367px;
+}
+.story-main .cont-wrap .cont a{
+	display: block;
+}
+.story-main .cont-wrap .cont div.img{
+	height: 500px;
+}
+.story-main .cont-wrap .cont div.img img{
+	width: 100%;
+	height: 100%;
+}
+
+.story-main .cont-wrap .cont .txt{
+	padding: 10px 0;
+}
+
+.story-main .cont-wrap .cont{
+	margin-right:30px ;
+	margin-bottom: 10px;
+}
+.story-main .cont-wrap .cont:nth-child(odd){
+	margin-top: -220px;
+}
+.story-main .cont-wrap .cont:nth-child(even){
+	margin-top: -80px;
+}
+
+.story-main .cont-wrap .cont:nth-child(3){
+	margin-top: -434px;
+}
+
+.story-main .cont-wrap .cont:nth-child(4){
+	margin-top: -347px;
+}
+
+
+/* .story-main .card01{
 	background: url(../images/bg-story-card01.png) left top no-repeat;
 	width: 266px;
 	height: 386px;
@@ -2573,7 +2618,7 @@ div.popup div.btn-list .btn{
 .story-wrap .btn{
 	background-color: #66544a;
 	margin-bottom: 60px;
-}
+} */
 
 
 /*.story-list*/
@@ -2581,7 +2626,7 @@ div.popup div.btn-list .btn{
 
 }
 .story-list .cont-wrap{
-	width:1200px;
+	width:1320px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: start;
@@ -2589,21 +2634,25 @@ div.popup div.btn-list .btn{
 }
 
 .story-list .card{
-	width: 250px;
-	height: 373px;
+	width: 310px;
+	height: 436px;
 	box-shadow: 8.7px 9.7px 7.8px 1.2px rgba(0, 0, 0, 0.1);
 	background-color: #fff;
 	margin-bottom: 60px;
 	margin-right: 20px;
-	margin-left: 20px;
+	margin-left: 0;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
+	border-radius: 5px;
+}
+.story-list .card:nth-child(4n){
+	margin-right: 0;
 }
 
 .story-list .card div.img{
-	width: 250px;
-	height: 250px;
+	width: 310px;
+	height: 301px;
 }
 
 .story-list .card div.img a{
@@ -2624,25 +2673,33 @@ div.popup div.btn-list .btn{
 	align-items: center;
 	font-weight: 500;
 	font-size: 18px;
-	padding: 20px;
 	box-sizing: border-box;
-
-	
-	
-
 }
 
 .story-list .card div.txt a{
-	
+	padding: 20px;
 	width: 100%;
 	height: 100%;
-
 	text-overflow: ellipsis;
 	overflow: hidden;
 	word-wrap: break-word;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
   	-webkit-box-orient: vertical;
+	position: relative;
+	line-height: 24px;
+}
+.story-list .card div.txt a::after{
+	content: "";
+	width: 100%;
+	height: 13px;
+	background: url(../images/btn-view-more.png) left top no-repeat;
+	background-size: 92px 13px;
+	display: block;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+
 }
 
 /*story-view*/
